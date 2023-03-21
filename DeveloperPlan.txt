@@ -1,0 +1,6 @@
+Woo Hoo! I figured out how to display text in real time! :)
+
+TODO:
+    1. Add option to specify Audio or Video 
+    2. Add option download playlist or vide 
+    3. update recent downloaded playlists

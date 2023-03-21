@@ -1,0 +1,3 @@
+playlist_name,link
+CowBoy,https://www.youtube.com/playlist?list=PLmh0YA3ZeaRgFv4dps_j_6tZXY5Tpamqg
+Testing,https://www.youtube.com/playlist?list=PLmh0YA3ZeaRgv3enDMlj2CAQyJqYRPKrl
