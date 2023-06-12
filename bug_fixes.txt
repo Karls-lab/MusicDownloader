@@ -1,9 +1,0 @@
-First, I had to download Git For Windows: (https://git-scm.com/download/win) Then, I downgraded my already installed PyTube package with the below command. This installs PyTube 10.9.3:
-
-`python -m pip install git+https://github.com/Zeecka/pytube@fix_1060`
-
-Finally, I re-installed the latest version of PyTube (this command installs the latest version):
-
-`pip install --upgrade pytube`
-
-Not sure exactly, what causes PyTube to flip out when you first install, but downgrading, then upgrading worked for me.

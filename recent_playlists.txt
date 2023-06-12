@@ -1,6 +1,0 @@
-playlist_name,link
-Daydream,https://www.youtube.com/playlist?list=PLvcfoWPz0Qq1B6IQ_BnV5eXYbZFnMqrvx
-Base Line,https://www.youtube.com/playlist?list=PLvcfoWPz0Qq1B6IQ_BnV5eXYbZFnMqrvx
-Hangsang,https://www.youtube.com/playlist?list=PLvcfoWPz0Qq1B6IQ_BnV5eXYbZFnMqrvx
-Airplane,https://www.youtube.com/playlist?list=PLvcfoWPz0Qq1B6IQ_BnV5eXYbZFnMqrvx
-Blue Side (Outro),https://www.youtube.com/playlist?list=PLvcfoWPz0Qq1B6IQ_BnV5eXYbZFnMqrvx
