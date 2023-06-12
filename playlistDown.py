@@ -6,7 +6,6 @@ import tkinter as tk
 from tkinter.scrolledtext import ScrolledText
 import pandas as pd
 import numpy as np
-import song_image_manager
 
 # PYTUBE DOCS: https://pytube.io/en/latest/index.html
 # Created by Karl :)
@@ -18,7 +17,6 @@ class Program:
         self.root = tk.Tk()
         self.root.title("Youtube Music Downloader")
         self.root.geometry('800x400')
-        self.song_image_manager = song_image_manager.Image_manager()
 
         # Variables
         self.download_location = os.path.join(os.path.expanduser('~'),'Music')
@@ -54,7 +52,7 @@ class Program:
 
         # gets the index of the selected playlist in the drop down menu
         recent = self.get_recent_playlists()
-        default = recent[0]
+        default = "Recent Downloads"
         self.variable = tk.StringVar(self.root)
         self.variable.set(default) # default value
 
@@ -83,6 +81,12 @@ class Program:
 
     def get_recent_playlists(self):
         # Returns a list of 5 elements in the csv file
+        # if file doesn't exist:
+        if not os.path.exists('recent_playlists.txt'):
+                os.mknod('recent_playlists.txt')
+                with open('recent_playlists.txt', 'r+') as f:
+                    f.write('playlist_name,link\n')
+                    f.write('Example,https://www.youtube.com/watch?v=jNQXAC9IVRw')
         df = pd.read_csv('recent_playlists.txt')
         recent = df.tail(5) # will get the last 5 searched links
         list_of_recent = list(recent.iloc[0:5]['playlist_name'])
@@ -168,7 +172,7 @@ class Program:
                     self.disprint("DOWNLOADING: " + video.title, separator="")
                     ##########self.video_title = video.title
                     if self.video_stream: # Filter Video MP4 only
-                        mp4_streams = video.streams.filter(mime_type='video/mp4')
+                        mp4_streams = video.streams.filter(progressive=True, mime_type='video/mp4')
                         sorted_video_streams = sorted(mp4_streams, key=lambda stream: int(stream.resolution[:-1]))
                         if self.quality == "high":
                             selected_stream = sorted_video_streams[-1]
