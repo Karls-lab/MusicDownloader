@@ -9,7 +9,7 @@ import numpy as np
 
 # PYTUBE DOCS: https://pytube.io/en/latest/index.html
 # Created by Karl :)
-# Version 1.0
+# Version 1.3
 
 class Program:
     # ----- Init for gui -----
@@ -81,7 +81,7 @@ class Program:
 
     def get_recent_playlists(self):
         # Returns a list of 5 elements in the csv file
-        # if file doesn't exist:
+        # if file doesn't exist, it creates a new one
         if not os.path.exists('recent_playlists.txt'):
                 os.mknod('recent_playlists.txt')
                 with open('recent_playlists.txt', 'r+') as f:
@@ -148,12 +148,12 @@ class Program:
                 print("Attempting playlist Download")
                 yt = Playlist(link) 
                 print(f"yt.videos: {yt.videos}")
-                self.downloadYoutubeOjects(yt.videos) # changed yt to yt.videos
+                self.downloadYoutubeOjects(yt.videos) # pass a list of youtube video objects
             else: # if it's only one video
                 print("Not a playlist")
                 yt = YouTube(link)
                 print(yt)
-                self.downloadYoutubeOjects([yt])
+                self.downloadYoutubeOjects([yt]) # pass a one element list of youtube video objects
         except Exception as e:
             print(e)
             self.disprint(f"Connection Error {e}")
@@ -172,16 +172,17 @@ class Program:
                     self.disprint("DOWNLOADING: " + video.title, separator="")
                     ##########self.video_title = video.title
                     if self.video_stream: # Filter Video MP4 only
+                        # Sort the streams from lowest quality to highest quality.
                         mp4_streams = video.streams.filter(progressive=True, mime_type='video/mp4')
                         sorted_video_streams = sorted(mp4_streams, key=lambda stream: int(stream.resolution[:-1]))
-                        if self.quality == "high":
+                        if self.quality == "high": 
                             selected_stream = sorted_video_streams[-1]
                         else:
                             selected_stream = sorted_video_streams[0]
                     else: # Filter Audio MP4 only
+                        # Sort the streams from lowest quality to highest quality.
                         mp4_streams = video.streams.filter(mime_type="audio/mp4")
                         sorted_audio_streams = sorted(mp4_streams, key=lambda stream: int(stream.bitrate))
-                        print(sorted_audio_streams)
                         if self.quality == "high":
                             selected_stream = sorted_audio_streams[-1]
                         else:
