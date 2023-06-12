@@ -1,9 +1,9 @@
 Woo Hoo! I figured out how to display text in real time! :)
 
 TODO:
-    1. Add option to specify Audio or Video 
-    3. Add radio buttons that fill in the recent playlist from dropdown menu
-    4. Add images to downloaded videos
+    1. Recent Playlists and videos should update. 
+    2. Figure out how to update it in real time
+    2. Add images to downloaded videos
 
 
 Learning:
