@@ -1,5 +1,6 @@
 playlist_name,link
-CowBoy,https://www.youtube.com/playlist?list=PLmh0YA3ZeaRgFv4dps_j_6tZXY5Tpamqg
-Testing,https://www.youtube.com/playlist?list=PLmh0YA3ZeaRgv3enDMlj2CAQyJqYRPKrl
-Test playlist,https://www.youtube.com/playlist?list=PLS_96ntbbZDH225rzjPEt5iNkmzbRVu7W
-Test Video,https://www.youtube.com/watch?v=pWRJAHaOrYg
+Daydream,https://www.youtube.com/playlist?list=PLvcfoWPz0Qq1B6IQ_BnV5eXYbZFnMqrvx
+Base Line,https://www.youtube.com/playlist?list=PLvcfoWPz0Qq1B6IQ_BnV5eXYbZFnMqrvx
+Hangsang,https://www.youtube.com/playlist?list=PLvcfoWPz0Qq1B6IQ_BnV5eXYbZFnMqrvx
+Airplane,https://www.youtube.com/playlist?list=PLvcfoWPz0Qq1B6IQ_BnV5eXYbZFnMqrvx
+Blue Side (Outro),https://www.youtube.com/playlist?list=PLvcfoWPz0Qq1B6IQ_BnV5eXYbZFnMqrvx
