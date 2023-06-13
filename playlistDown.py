@@ -3,6 +3,7 @@ from pytube import Playlist
 from pytube import YouTube
 import os
 import tkinter as tk
+from tkinter import filedialog
 from tkinter.scrolledtext import ScrolledText
 import pandas as pd
 import numpy as np
