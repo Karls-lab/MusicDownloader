@@ -1,4 +1,3 @@
-import logging
 from pytube import Playlist
 from pytube import YouTube
 import os
@@ -206,7 +205,6 @@ class Program:
                 except Exception as e:
                     self.disprint(f"Error Downloading Title, Skipping...")
                     print(f"Error: {e}")
-                    logging.exception("An exception was thrown!")
             self.disprint("Done")
         except Exception as e: 
             self.disprint(f"Error Downloading Video")
