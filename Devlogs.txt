@@ -1,0 +1,4 @@
+
+It's looking good! 
+I need to figure out how to refactor a lot of this code. 
+I want to separete everything into different classes. Should I follow the model/view/controller pattern?
