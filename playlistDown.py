@@ -35,14 +35,18 @@ class Program:
         # row 1
         frame = tk.Frame(self.root, borderwidth=2, relief="ridge")  # You can customize borderwidth and relief
         frame.grid(row=1, column=0, columnspan=3, sticky='ew', padx=1)
+
         self.high_quallity_switch= tk.Checkbutton(frame, text="High Quality", onvalue="high", offvalue="low", command=lambda: self.change_Quality())
         self.high_quallity_switch.grid(row=1, column=0, sticky='ew')
         self.low_quallity_switch= tk.Checkbutton(frame, text="Low Quality", onvalue="low", offvalue="high", command=lambda: self.change_Quality())
+        self.low_quallity_switch.select()
         self.low_quallity_switch.grid(row=1, column=1, sticky='ew')
+
         self.audio_only_switch = tk.Checkbutton(frame, text="Audio Only", onvalue="audio", offvalue="video", command=lambda: self.change_audio_video())
         self.audio_only_switch.grid(row=1, column=2, sticky='n', padx=1)
         self.video_only_switch = tk.Checkbutton(frame, text="Video/Audio", onvalue="video", offvalue="audio", command=lambda: self.change_audio_video())
         self.video_only_switch.grid(row=1, column=3, sticky='e')
+        self.video_only_switch.select()
 
         # row 3
         url_label = tk.Label(self.root, text="Youtube URL:")
@@ -132,10 +136,6 @@ class Program:
     def set_download_location(self):
         self.download_location = tk.filedialog.askdirectory()
         print(self.download_location)
-
-
-    def get_download_location(self):
-        return self.download_location
 
 
     def change_audio_video(self):
@@ -241,6 +241,7 @@ class Program:
             self.disprint(f"Error Downloading Video/Playlist")
             logging.error(f"Error Downloading Video/Playlist {e}")
             return
+
 
 """" Main LOOP """
 if __name__ == "__main__":

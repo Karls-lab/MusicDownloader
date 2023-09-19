@@ -1,4 +1,3 @@
 
-It's looking good! 
-I need to figure out how to refactor a lot of this code. 
-I want to separete everything into different classes. Should I follow the model/view/controller pattern?
+My next task is to create a button to update all playlists 
+If I have a folder that contains other folders that are playlists, I want to update them all with one click.
