@@ -1,0 +1,4 @@
+FUTURE ADDITIONS:
+    1. When only audio is selected, download in mp3 (smaller?)
+
+    2. Save thumbnails of videos on music only downloads

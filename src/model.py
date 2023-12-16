@@ -12,6 +12,7 @@ class Model:
         self.quality = "low"
         self.video_title = ""
         self.video_link = ""
+        self.display_terminal_text = "here"
 
 
     def get_recent_playlists(self):
@@ -48,11 +49,11 @@ class Model:
     """
     def process(self, link):
         # Clear the display
-        self.display_terminal.delete("1.0", tk.END)
+        # self.display_terminal.delete("1.0", tk.END)
         self.video_link = link
 
-        self.disprint("processing...")
-        self.disprint(f"Saving music to: {self.download_location}\n")
+        # self.disprint("processing...")
+        # self.disprint(f"Saving music to: {self.download_location}\n")
         print(f"link: {link}")
         try: 
             # Save the playlist to the Music folder, and create a new folder if it doesn't exist
@@ -66,12 +67,14 @@ class Model:
                 if not os.path.exists(self.download_location):
                     os.mkdir(f"{self.download_location}")
                 self.update_recent_downloads(yt.title, self.video_link)
+                return yt.videos
                 self.downloadYoutubeOjects(yt.videos) # pass a list of youtube video objects
             else: # if it's only one video
                 """ create a yt object, save name and link to recent downloads, download video"""
                 print("Video Detected")
                 yt = YouTube(link)
                 self.update_recent_downloads(yt.title, self.video_link)
+                return [yt]
                 self.downloadYoutubeOjects([yt]) # pass a one element list of youtube video objects
         except Exception as e: # something went wrong
             print(e)
@@ -88,8 +91,10 @@ class Model:
             for video in yt_objects:
                 selected_stream = None
                 print(f"video: {video}")
+                self.video_title = video.title
+                print(f"video title: {self.video_title}")
                 try:
-                    self.disprint("DOWNLOADING: " + video.title, separator="")
+                    # self.disprint("DOWNLOADING: " + video.title, separator="")
                     if self.video_stream: # Filter Video MP4 only
                         # Sort the streams from lowest quality to highest quality.
                         mp4_streams = video.streams.filter(progressive=True, mime_type='video/mp4')
@@ -116,13 +121,13 @@ class Model:
                     #                                       self.get_download_location(), video.title)
 
                     # No exceptions were thrown! Yay!
-                    self.disprint(" OK")
+                    # self.disprint(" OK")
                     
                 except Exception as e:
-                    self.disprint(f"Error Downloading Title, Skipping...")
+                    # self.disprint(f"Error Downloading Title, Skipping...")
                     logging.error(f"Error Downloading Title, Skipping... {e}")
-            self.disprint("Done")
+            # self.disprint("Done")
         except Exception as e: 
-            self.disprint(f"Error Downloading Video/Playlist")
+            # self.disprint(f"Error Downloading Video/Playlist")
             logging.error(f"Error Downloading Video/Playlist {e}")
             return
