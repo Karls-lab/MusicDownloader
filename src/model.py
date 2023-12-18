@@ -4,6 +4,7 @@ import pandas as pd
 import numpy as np
 import logging
 import tkinter as tk
+import requests
 
 class Model:
     def __init__(self):
@@ -12,7 +13,7 @@ class Model:
         self.quality = "low"
         self.video_title = ""
         self.video_link = ""
-        self.display_terminal_text = "here"
+        self.display_terminal_text = "Default Display content"
 
 
     def get_recent_playlists(self):
@@ -68,14 +69,12 @@ class Model:
                     os.mkdir(f"{self.download_location}")
                 self.update_recent_downloads(yt.title, self.video_link)
                 return yt.videos
-                self.downloadYoutubeOjects(yt.videos) # pass a list of youtube video objects
             else: # if it's only one video
                 """ create a yt object, save name and link to recent downloads, download video"""
-                print("Video Detected")
+                print("Found a YT object")
                 yt = YouTube(link)
                 self.update_recent_downloads(yt.title, self.video_link)
                 return [yt]
-                self.downloadYoutubeOjects([yt]) # pass a one element list of youtube video objects
         except Exception as e: # something went wrong
             print(e)
             # self.disprint(f"Connection Error {e}")
@@ -94,22 +93,41 @@ class Model:
                 self.video_title = video.title
                 print(f"video title: {self.video_title}")
                 try:
-                    # self.disprint("DOWNLOADING: " + video.title, separator="")
-                    if self.video_stream: # Filter Video MP4 only
+                    if self.video_stream: # Filter VIDEO LOGIC MP4 only
                         # Sort the streams from lowest quality to highest quality.
+                        # TODO let user choose stream video quality
+                        print("Video Stream")
+                        print(f"video.streams: {video.streams}")
                         mp4_streams = video.streams.filter(progressive=True, mime_type='video/mp4')
                         sorted_video_streams = sorted(mp4_streams, key=lambda stream: int(stream.resolution[:-1]))
+                        print(f"sorted video streams: {sorted_video_streams}")
                         if self.quality == "high": 
                             selected_stream = sorted_video_streams[-1]
                         else:
                             selected_stream = sorted_video_streams[0]
-                    else: # Filter Audio MP4 only
+                    else: # Filter AUDIO LOGIC MP3 only
+                        """
+                        Will prefer MP3 over MP4
+                        Sort the streams from lowest quality to highest quality.
+                        """
+
+                        print("Audio Stream")
+                        mp_streams = video.streams.filter(mime_type="audio/mp3")
+                        if len(mp_streams) == 0:
+                            mp_streams= video.streams.filter(mime_type="audio/mp4")
+
                         # Sort the streams from lowest quality to highest quality.
-                        mp4_streams = video.streams.filter(mime_type="audio/mp4")
-                        sorted_audio_streams = sorted(mp4_streams, key=lambda stream: int(stream.bitrate))
-                        if self.quality == "high":
+                        for stream in mp_streams:
+                            print(f"stream: {stream}")
+                            stream.abr = int(stream.abr[:-4]) # removes kbps from end
+                        sorted_audio_streams = sorted(mp_streams, key=lambda stream: stream.abr)
+                        print(f"sorted audio streams: {sorted_audio_streams}")
+
+                        if len(sorted_audio_streams) < 1:
+                            raise Exception("Unable to find audio stream")
+                        elif self.quality == "high":
                             selected_stream = sorted_audio_streams[-1]
-                        else:
+                        elif self.quality == "low":
                             selected_stream = sorted_audio_streams[0]
                         print(f"Selected stream: {selected_stream}")
 
@@ -120,8 +138,6 @@ class Model:
                     #self.song_image_manager.download_image(f"https://www.youtube.com/watch?v={video.video_id}", 
                     #                                       self.get_download_location(), video.title)
 
-                    # No exceptions were thrown! Yay!
-                    # self.disprint(" OK")
                     
                 except Exception as e:
                     # self.disprint(f"Error Downloading Title, Skipping...")
@@ -131,3 +147,17 @@ class Model:
             # self.disprint(f"Error Downloading Video/Playlist")
             logging.error(f"Error Downloading Video/Playlist {e}")
             return
+
+
+    """
+    Grabs the Thumbnail Image for Every Youtube Video 
+    """
+    def grab_thumbnail(self, link):
+        yt = YouTube(link)
+        return yt.thumbnail_url
+    
+    def download_thumbnail(self, thumbnail_url, filename):
+        # Download and save the thumbnail image
+        thumbnail = requests.get(thumbnail_url)
+        with open(filename, "wb") as img_file:
+            img_file.write(thumbnail.content)

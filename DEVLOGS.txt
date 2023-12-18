@@ -2,3 +2,13 @@ FUTURE ADDITIONS:
     1. When only audio is selected, download in mp3 (smaller?)
 
     2. Save thumbnails of videos on music only downloads
+
+    3. Add button to erase youtube URL 
+
+    3. Add Requirements to download any dependencies 
+
+    4. Add setup.py function to add program to cmd execution (linux) 
+
+    5. Add auto sync for users playlists 
+
+    6. Allow user to log in to access age restricted files.
