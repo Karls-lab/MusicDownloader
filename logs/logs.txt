@@ -1,0 +1,96 @@
+2023-12-18 22:53:14,716 - DEBUG - matched regex search: (?:v=|\/)([0-9A-Za-z_-]{11}).*
+2023-12-18 22:53:18,358 - DEBUG - applying descrambler
+2023-12-18 22:53:18,359 - DEBUG - finding initial function name
+2023-12-18 22:53:18,360 - DEBUG - Pattern failed: ytplayer\.config\s*=\s*
+2023-12-18 22:53:18,360 - DEBUG - Could not parse object.
+2023-12-18 22:53:18,393 - DEBUG - finished regex search, matched: (/s/player/[\w\d]+/[\w\d_/.]+/base\.js)
+2023-12-18 22:53:19,617 - DEBUG - finding initial function name
+2023-12-18 22:53:19,802 - DEBUG - finished regex search, matched: (?P<sig>[a-zA-Z0-9$]+)\s*=\s*function\(\s*a\s*\)\s*{\s*a\s*=\s*a\.split\(\s*""\s*\)
+2023-12-18 22:53:19,802 - DEBUG - getting transform plan
+2023-12-18 22:53:19,803 - DEBUG - matched regex search: HLa=function\(\w\){[a-z=\.\(\"\)]*;(.*);(?:.+)}
+2023-12-18 22:53:19,803 - DEBUG - getting transform object
+2023-12-18 22:53:19,805 - DEBUG - Finding throttling function name
+2023-12-18 22:53:19,806 - DEBUG - finished regex search, matched: a\.[a-zA-Z]\s*&&\s*\([a-z]\s*=\s*a\.get\("n"\)\)\s*&&\s*\([a-z]\s*=\s*([a-zA-Z0-9$]+)(\[\d+\])?\([a-z]\)
+2023-12-18 22:53:19,812 - DEBUG - Finding throttling function name
+2023-12-18 22:53:19,813 - DEBUG - finished regex search, matched: a\.[a-zA-Z]\s*&&\s*\([a-z]\s*=\s*a\.get\("n"\)\)\s*&&\s*\([a-z]\s*=\s*([a-zA-Z0-9$]+)(\[\d+\])?\([a-z]\)
+2023-12-18 22:53:19,821 - DEBUG - signature found, skip decipher
+2023-12-18 22:53:19,821 - DEBUG - signature found, skip decipher
+2023-12-18 22:53:19,822 - DEBUG - signature found, skip decipher
+2023-12-18 22:53:19,822 - DEBUG - signature found, skip decipher
+2023-12-18 22:53:19,822 - DEBUG - signature found, skip decipher
+2023-12-18 22:53:19,822 - DEBUG - signature found, skip decipher
+2023-12-18 22:53:19,822 - DEBUG - signature found, skip decipher
+2023-12-18 22:53:19,822 - DEBUG - signature found, skip decipher
+2023-12-18 22:53:19,822 - DEBUG - signature found, skip decipher
+2023-12-18 22:53:19,822 - DEBUG - signature found, skip decipher
+2023-12-18 22:53:19,822 - DEBUG - signature found, skip decipher
+2023-12-18 22:53:19,901 - DEBUG - downloading (791367 total bytes) file to /home/x1b3d3ad/Music/jawed - Me at the zoo.mp4
+2023-12-18 22:53:20,396 - DEBUG - download remaining: 0
+2023-12-18 22:53:20,397 - DEBUG - download finished
+2023-12-18 22:53:20,398 - DEBUG - matched regex search: (?:v=|\/)([0-9A-Za-z_-]{11}).*
+2023-12-18 22:53:20,638 - DEBUG - Starting new HTTPS connection (1): i.ytimg.com:443
+2023-12-18 22:53:20,808 - DEBUG - https://i.ytimg.com:443 "GET /vi/jNQXAC9IVRw/hqdefault.jpg?sqp=-oaymwExCJADEOABSFryq4qpAyMIARUAAIhCGAHwAQH4Ab4CgALwAYoCDAgAEAEYVCBYKGUwDw==&rs=AOn4CLBqBCRgfEvoqZAMmrGkQ1eH7e2gRQ HTTP/1.1" 200 28862
+2023-12-18 23:32:48,479 - DEBUG - matched regex search: (?:v=|\/)([0-9A-Za-z_-]{11}).*
+2023-12-18 23:32:52,164 - DEBUG - applying descrambler
+2023-12-18 23:32:52,164 - DEBUG - finding initial function name
+2023-12-18 23:32:52,165 - DEBUG - Pattern failed: ytplayer\.config\s*=\s*
+2023-12-18 23:32:52,165 - DEBUG - Could not parse object.
+2023-12-18 23:32:52,180 - DEBUG - finished regex search, matched: (/s/player/[\w\d]+/[\w\d_/.]+/base\.js)
+2023-12-18 23:32:53,186 - DEBUG - finding initial function name
+2023-12-18 23:32:53,373 - DEBUG - finished regex search, matched: (?P<sig>[a-zA-Z0-9$]+)\s*=\s*function\(\s*a\s*\)\s*{\s*a\s*=\s*a\.split\(\s*""\s*\)
+2023-12-18 23:32:53,373 - DEBUG - getting transform plan
+2023-12-18 23:32:53,373 - DEBUG - matched regex search: HLa=function\(\w\){[a-z=\.\(\"\)]*;(.*);(?:.+)}
+2023-12-18 23:32:53,373 - DEBUG - getting transform object
+2023-12-18 23:32:53,374 - DEBUG - Finding throttling function name
+2023-12-18 23:32:53,375 - DEBUG - finished regex search, matched: a\.[a-zA-Z]\s*&&\s*\([a-z]\s*=\s*a\.get\("n"\)\)\s*&&\s*\([a-z]\s*=\s*([a-zA-Z0-9$]+)(\[\d+\])?\([a-z]\)
+2023-12-18 23:32:53,378 - DEBUG - Finding throttling function name
+2023-12-18 23:32:53,378 - DEBUG - finished regex search, matched: a\.[a-zA-Z]\s*&&\s*\([a-z]\s*=\s*a\.get\("n"\)\)\s*&&\s*\([a-z]\s*=\s*([a-zA-Z0-9$]+)(\[\d+\])?\([a-z]\)
+2023-12-18 23:32:53,381 - DEBUG - signature found, skip decipher
+2023-12-18 23:32:53,381 - DEBUG - signature found, skip decipher
+2023-12-18 23:32:53,381 - DEBUG - signature found, skip decipher
+2023-12-18 23:32:53,381 - DEBUG - signature found, skip decipher
+2023-12-18 23:32:53,381 - DEBUG - signature found, skip decipher
+2023-12-18 23:32:53,381 - DEBUG - signature found, skip decipher
+2023-12-18 23:32:53,381 - DEBUG - signature found, skip decipher
+2023-12-18 23:32:53,381 - DEBUG - signature found, skip decipher
+2023-12-18 23:32:53,382 - DEBUG - signature found, skip decipher
+2023-12-18 23:32:53,382 - DEBUG - signature found, skip decipher
+2023-12-18 23:32:53,382 - DEBUG - signature found, skip decipher
+2023-12-18 23:32:53,382 - DEBUG - signature found, skip decipher
+2023-12-18 23:32:53,382 - DEBUG - signature found, skip decipher
+2023-12-18 23:32:53,382 - DEBUG - signature found, skip decipher
+2023-12-18 23:32:53,382 - DEBUG - signature found, skip decipher
+2023-12-18 23:32:53,382 - DEBUG - signature found, skip decipher
+2023-12-18 23:32:53,382 - DEBUG - signature found, skip decipher
+2023-12-18 23:32:53,382 - DEBUG - signature found, skip decipher
+2023-12-18 23:32:53,382 - DEBUG - signature found, skip decipher
+2023-12-18 23:32:53,382 - DEBUG - signature found, skip decipher
+2023-12-18 23:32:54,050 - DEBUG - downloading (222674016 total bytes) file to /home/x1b3d3ad/Music/Tom McElroy-Wild Survival - Solo Survival- How to Survive Alone in the Desert (Sonoran Desert)- Part One.mp4
+2023-12-18 23:32:57,810 - DEBUG - download remaining: 213236832
+2023-12-18 23:32:59,184 - DEBUG - download remaining: 203799648
+2023-12-18 23:33:00,727 - DEBUG - download remaining: 194362464
+2023-12-18 23:33:02,199 - DEBUG - download remaining: 184925280
+2023-12-18 23:33:04,030 - DEBUG - download remaining: 175488096
+2023-12-18 23:33:05,488 - DEBUG - download remaining: 166050912
+2023-12-18 23:33:07,042 - DEBUG - download remaining: 156613728
+2023-12-18 23:33:09,465 - DEBUG - download remaining: 147176544
+2023-12-18 23:33:11,042 - DEBUG - download remaining: 137739360
+2023-12-18 23:33:14,315 - DEBUG - download remaining: 128302176
+2023-12-18 23:33:20,841 - DEBUG - download remaining: 118864992
+2023-12-18 23:33:23,675 - DEBUG - download remaining: 109427808
+2023-12-18 23:33:26,125 - DEBUG - download remaining: 99990624
+2023-12-18 23:33:28,941 - DEBUG - download remaining: 90553440
+2023-12-18 23:33:31,851 - DEBUG - download remaining: 81116256
+2023-12-18 23:33:34,391 - DEBUG - download remaining: 71679072
+2023-12-18 23:33:37,304 - DEBUG - download remaining: 62241888
+2023-12-18 23:33:40,045 - DEBUG - download remaining: 52804704
+2023-12-18 23:33:42,652 - DEBUG - download remaining: 43367520
+2023-12-18 23:33:45,694 - DEBUG - download remaining: 33930336
+2023-12-18 23:33:52,320 - DEBUG - download remaining: 24493152
+2023-12-18 23:33:54,506 - DEBUG - download remaining: 15055968
+2023-12-18 23:33:56,972 - DEBUG - download remaining: 5618784
+2023-12-18 23:33:58,235 - DEBUG - download remaining: 0
+2023-12-18 23:33:58,236 - DEBUG - download finished
+2023-12-18 23:33:58,236 - DEBUG - matched regex search: (?:v=|\/)([0-9A-Za-z_-]{11}).*
+2023-12-18 23:33:58,444 - DEBUG - Starting new HTTPS connection (1): i.ytimg.com:443
+2023-12-18 23:33:58,671 - DEBUG - https://i.ytimg.com:443 "GET /vi/_EzGfug8A2s/hq720.jpg HTTP/1.1" 200 189147

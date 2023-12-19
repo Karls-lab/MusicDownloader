@@ -1,7 +1,9 @@
-from model import Model
-from view import View
-from controller import Controller
-import setup_logger
+#!/usr/bin/env python3
+
+from src.model import Model
+from src.view import View
+from src.controller import Controller
+from src import setup_logger
 import sys
 
 

@@ -5,9 +5,12 @@ Introduction:
     pytube package to create a simple youtube downloader. The program is designed by me, Karl. 
 
 Download Instructions:
-    1. Please verify that you have these python packages: pytube, tkinter, os, logging, pandas, and numpy.
-        If you do not have all of these packages, please pip install them on your machine.
-    2. clone my git files into their own folder.  
+    1. Clone or extract the zip folder into the desired directory
+    1. Please verify that you have these python packages: 
+            pytube, tkinter, os, logging, pandas, moviepy and numpy.
+        If you do not have these packages, please navigate to 'dependencies' and run 
+        'install_dependencies.py' to auto-install the packages.
+        
 
 Usage Instructions:
     1. navigate to your favorite youtube video or playlist and past the URL into the 

@@ -1,3 +1,0 @@
-
-My next task is to create a button to update all playlists 
-If I have a folder that contains other folders that are playlists, I want to update them all with one click.

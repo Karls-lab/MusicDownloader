@@ -1,14 +1,11 @@
 FUTURE ADDITIONS:
-    2. Save thumbnails of videos on music only downloads
 
-    1. Set up Logging for entire program 
+    1. Reconfigure logging to be helpful
 
     3. Add button to erase youtube URL 
-
-    3. Add Requirements to download any dependencies 
-
-    4. Add setup.py function to add program to cmd execution (linux) 
 
     5. Add auto sync for users playlists 
 
     6. Allow user to log in to access age restricted files.
+
+    7. Create cryptography to hide the user sensitive information
