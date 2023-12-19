@@ -1,27 +1,35 @@
 from pytube import Playlist, YouTube
+from moviepy.editor import AudioFileClip, ImageClip
 import os
 import pandas as pd
 import numpy as np
-import logging
 import tkinter as tk
 import requests
 
 class Model:
-    def __init__(self):
+    def __init__(self, logger):
+        self.logger = logger
+        print("LOGGER: ", logger)
         self.download_location = os.path.join(os.path.expanduser('~'),'Music')
         self.video_stream = True
         self.quality = "low"
         self.video_title = ""
         self.video_link = ""
+        self.thumbnail_path = ""
+        self.download_video_path = ""
+        self.audio_file = False
         self.display_terminal_text = "Default Display content"
 
 
     def get_recent_playlists(self):
         """ Returns a dictionary of the 5 most recent videos/playlists
             In a dictionary. The key is the playlist name, and the value is the link"""
-        if not os.path.exists('recent_playlists.txt'):
-                os.mkdir('recent_playlists.txt')
-        df = pd.read_csv('recent_playlists.txt')
+        recentYTLinks = os.path.join(os.path.dirname(__file__), "data", "recent_playlists.csv")
+        if not os.path.exists(recentYTLinks): # if recent doesn't exist, create it. 
+            with open(recentYTLinks, 'w') as f:
+                f.write("playlist_name,link\n")
+                f.write("Me at the Zoo,https://www.youtube.com/watch?v=jNQXAC9IVRw")
+        df = pd.read_csv(recentYTLinks)
         recent = df.tail(5) # will get the last 5 searched links
         recent_dict = dict(zip(recent['playlist_name'], recent['link']))
         return recent_dict
@@ -38,11 +46,12 @@ class Model:
     def update_recent_downloads(self, name, link):
         # Resize the df to a length of 5 of most recent searches
         print(f"Saving new entry: {name} {link}")
-        df = pd.read_csv('recent_playlists.txt')
+        recent_playlists = os.path.join(os.path.dirname(__file__), "data", "recent_playlists.csv")
+        df = pd.read_csv(recent_playlists)
         if not df.isin([name]).any().any(): # if the entry is not in recent, add it
             df.loc[len(df)] = {"playlist_name": name, "link": link}
         df = df.tail(5) # trim to only last 5 entries
-        df.to_csv('recent_playlists.txt', index=False)
+        df.to_csv(recent_playlists, index=False)
 
 
     """
@@ -112,6 +121,7 @@ class Model:
                         """
 
                         print("Audio Stream")
+                        self.audio_file = True
                         mp_streams = video.streams.filter(mime_type="audio/mp3")
                         if len(mp_streams) == 0:
                             mp_streams= video.streams.filter(mime_type="audio/mp4")
@@ -131,33 +141,58 @@ class Model:
                             selected_stream = sorted_audio_streams[0]
                         print(f"Selected stream: {selected_stream}")
 
+                    # Set the download path to the download location
+                    video_name = f"{video.author} - {video.title}.{selected_stream.subtype}"
+                    self.download_video_path = f"{self.download_location}/{video_name}"
+
                     # Now Attempt to download the selected user Stream to the download location
                     selected_stream.download(filename=f"{video.author} - {video.title}.{selected_stream.subtype}", output_path=f"{self.download_location}")
 
-                    # Now download the image associataed with the song/video
-                    #self.song_image_manager.download_image(f"https://www.youtube.com/watch?v={video.video_id}", 
-                    #                                       self.get_download_location(), video.title)
+                    # Download the thumbnail
+                    self.download_thumbnail()
 
+                    # Combine the video and thumbnail if it's audio only 
+                    if self.audio_file:
+                        self.download_video_with_thumbnail()
                     
                 except Exception as e:
-                    # self.disprint(f"Error Downloading Title, Skipping...")
-                    logging.error(f"Error Downloading Title, Skipping... {e}")
-            # self.disprint("Done")
+                    self.logger.error(f"Error Downloading Title, Skipping... {e}")
         except Exception as e: 
             # self.disprint(f"Error Downloading Video/Playlist")
-            logging.error(f"Error Downloading Video/Playlist {e}")
+            self.logger.error(f"Error Downloading Video/Playlist {e}")
             return
 
 
     """
     Grabs the Thumbnail Image for Every Youtube Video 
     """
-    def grab_thumbnail(self, link):
-        yt = YouTube(link)
-        return yt.thumbnail_url
-    
-    def download_thumbnail(self, thumbnail_url, filename):
-        # Download and save the thumbnail image
-        thumbnail = requests.get(thumbnail_url)
-        with open(filename, "wb") as img_file:
+    def download_thumbnail(self):
+        thumbnailLink = YouTube(self.video_link).thumbnail_url
+        thumbnail = requests.get(thumbnailLink)
+        saveLocation = os.path.join(os.path.dirname(__file__), 'data', 'video.png')
+        with open(saveLocation, "wb") as img_file:
             img_file.write(thumbnail.content)
+        self.thumbnail_path = saveLocation
+
+    def delete_thumbnail(self):
+        saveLocation = os.path.join(os.path.dirname(__file__), 'data')
+        os.remove(f"{saveLocation}/video.png")
+
+
+    """
+    Downloads the Video, and combines it with the Thumbnail 
+    """
+    def download_video_with_thumbnail(self):
+        self.logger.info(f'download video path: {self.download_video_path}')
+        print(f'download video path: {self.download_video_path}')
+        print(f'download thumbnail path: {self.thumbnail_path}')
+        try:
+            audio = AudioFileClip(self.download_video_path)
+            thumbnail = ImageClip(self.thumbnail_path)
+            resultAudio = thumbnail.set_audio(audio)
+            resultAudio.duration = audio.duration
+            resultAudio.fps = 1
+            resultAudio.write_videofile(self.download_video_path, fps=1, codec='mpeg4')
+        except Exception as e:
+            print(f"Error combining video and thumbnail: {e}")
+            return
