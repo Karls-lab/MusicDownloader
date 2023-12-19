@@ -3,4 +3,7 @@ bug_fixes.txt
 recent_playlists.txt
 pytube-io.en-stable.pdf
 DeveloperPlan.txt
-song_image_manager.py
+recent_playlists.csv
+video.png
+
+*.pyc
