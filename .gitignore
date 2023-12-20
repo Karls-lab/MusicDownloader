@@ -7,3 +7,4 @@ recent_playlists.csv
 video.png
 
 *.pyc
+__pycache__

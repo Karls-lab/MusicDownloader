@@ -9,9 +9,8 @@ import sys
 
 if __name__ == "__main__":
     logger = setup_logger.setup_logging()
-
     if logger is None:
-        sys.exit()
+        print("ERROR, Logger not setup correctly")
 
     model = Model(logger)
     view = View(None) 
