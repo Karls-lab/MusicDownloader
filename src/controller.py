@@ -2,7 +2,8 @@ import tkinter as tk
 from tkinter import filedialog
 
 class Controller:
-    def __init__(self, model, view):
+    def __init__(self, logger, model, view):
+        self.logger = logger
         self.model = model
         self.view = view
 
@@ -32,20 +33,23 @@ class Controller:
         print(f'my view: {self.view}')
         if self.model.quality == "low":
             self.model.quality = "high"
-            self.view.low_quallity_switch.deselect()
+            self.view.low_quality_switch.deselect()
         elif self.model.quality == "high":
             self.model.quality = "low"
-            self.view.high_quallity_switch.deselect()
+            self.view.high_quality_switch.deselect()
 
+    """ Prints the download progress to the application terminal"""
     def process(self, link):
         ytObjects = self.model.process(link)
-        self.view.display_terminal.insert(tk.END, self.model.display_terminal_text)
-        self.view.display_terminal.update_idletasks()  
+        # self.view.display_terminal.insert(tk.END, self.model.display_terminal_text)
+        # self.view.display_terminal.update_idletasks()  
         
-        self.view.display_terminal.insert(tk.END, f"\nDownloading: ...") 
+        self.view.display_terminal.insert(tk.END, f"Downloading: {self.model.video_title}\n") 
+        self.view.display_terminal.insert(tk.END, "Please Wait...\n")
         self.view.display_terminal.update_idletasks()  
-        self.model.downloadYoutubeOjects(ytObjects)
-        self.view.display_terminal.insert(tk.END, f" Saved {self.model.video_title} OK\n")
+        self.model.downloadYoutubeObjects(ytObjects)
+        # Return an error if something went wrong. 
+        self.view.display_terminal.insert(tk.END, f" Saved OK")
         self.view.display_terminal.see(tk.END)
 
     

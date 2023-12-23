@@ -4,7 +4,6 @@ from src.model import Model
 from src.view import View
 from src.controller import Controller
 from src import setup_logger
-import sys
 
 
 if __name__ == "__main__":
@@ -13,8 +12,8 @@ if __name__ == "__main__":
         print("ERROR, Logger not setup correctly")
 
     model = Model(logger)
-    view = View(None) 
-    view.controller = Controller(model, view)
+    view = View(logger, None) 
+    view.controller = Controller(logger, model, view)
     view.setupView()
     
 

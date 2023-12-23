@@ -1,6 +1,10 @@
 FUTURE ADDITIONS:
 
-    1. Reconfigure logging to be helpful
+    1. Add a button to select download location
+
+    2. Add two lines for recent videos or shorten.
+
+    2. Reconfigure logging to be helpful
 
     3. Add button to erase youtube URL 
 

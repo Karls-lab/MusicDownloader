@@ -18,7 +18,7 @@ class Model:
         self.thumbnail_path = ""
         self.download_video_path = ""
         self.audio_file = False
-        self.display_terminal_text = "Default Display content"
+        self.display_terminal_text = ""
 
 
     def get_recent_playlists(self):
@@ -31,8 +31,9 @@ class Model:
                 f.write("Me at the Zoo,https://www.youtube.com/watch?v=jNQXAC9IVRw")
         df = pd.read_csv(recentYTLinks)
         recent = df.tail(5) # will get the last 5 searched links
-        recent_dict = dict(zip(recent['playlist_name'], recent['link']))
-        return recent_dict
+        reversed_recent = recent.iloc[::-1] # Reverse DF
+        return_dict = dict(zip(reversed_recent['playlist_name'], reversed_recent['link']))
+        return return_dict 
 
 
     def change_Quality(self):
@@ -94,7 +95,7 @@ class Model:
     """ 
     ----- Download List of Youtube Objects -----
     """
-    def downloadYoutubeOjects(self, yt_objects: list):
+    def downloadYoutubeObjects(self, yt_objects: list):
         try: 
             for video in yt_objects:
                 selected_stream = None
