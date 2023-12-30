@@ -30,11 +30,12 @@ class View:
         save_location_label = tk.Label(self.root, text="Save Location:")
         save_location_label.grid(row=0, column=0, padx=10, sticky=tk.W)
         # Button 
-        download_location_button = tk.Button(self.root, text="Browse", command=self.controller.set_download_location)
+        download_location_button = tk.Button(self.root, text="Browse", 
+                                            command=self.controller.set_download_location)
         download_location_button.grid(row=0, column=0, padx=0, pady=0, sticky=tk.E)
         # Text Entry
         self.download_location_entry = tk.Entry(self.root, width=50)
-        self.download_location_entry.insert(0, self.controller.get_download_location())
+        self.download_location_entry.insert(0, os.path.join(os.path.expanduser('~'),'Music'))
         self.download_location_entry.grid(row=0, column=1, columnspan=4, padx=0, sticky=tk.W)
 
 
@@ -44,20 +45,24 @@ class View:
         frame.grid(row=1, column=0, columnspan=3, sticky='ew', padx=10)
         # high quality toggle switch
         self.high_quality_switch = tk.Checkbutton(
-            frame, text="High Quality", onvalue="high", offvalue="low", command=self.controller.change_Quality)
+            frame, text="High Quality", onvalue="high", offvalue="low", 
+            command=self.controller.change_Quality)
         self.high_quality_switch.grid(row=1, column=0, sticky='ew')
         # Low quality toggle switch
         self.low_quality_switch = tk.Checkbutton(
-            frame, text="Low Quality", onvalue="low", offvalue="high", command=self.controller.change_Quality)
+            frame, text="Low Quality", onvalue="low", offvalue="high", 
+            command=self.controller.change_Quality)
         self.low_quality_switch.select()
         self.low_quality_switch.grid(row=1, column=1, sticky='ew')
         # Audio only toggle switch
         self.audio_only_switch = tk.Checkbutton(
-            frame, text="Audio Only", onvalue="audio", offvalue="video", command=self.controller.change_audio_video)
+            frame, text="Audio Only", onvalue="audio", offvalue="video", 
+            command=self.controller.change_audio_video)
         self.audio_only_switch.grid(row=1, column=2, sticky='n', padx=1)
         # Video only toggle switch
         self.video_only_switch = tk.Checkbutton(
-            frame, text="Video/Audio", onvalue="video", offvalue="audio", command=self.controller.change_audio_video)
+            frame, text="Video/Audio", onvalue="video", offvalue="audio", 
+            command=self.controller.change_audio_video)
         self.video_only_switch.grid(row=1, column=3, sticky='e')
         self.video_only_switch.select()
 
@@ -80,7 +85,8 @@ class View:
         default = "Recent Downloads"
         self.variable = tk.StringVar(self.root)
         self.variable.set(default)
-        w = tk.OptionMenu(self.root, self.variable, *recent, command=self.change_playlist_input)
+        w = tk.OptionMenu(self.root, self.variable, *recent, 
+                          command=self.change_playlist_input)
         w.config(width=20)
         w.grid(row=2, column=1, columnspan=2, sticky='ew')
 
@@ -98,7 +104,8 @@ class View:
         btn_label = tk.Label(self.root, text="Download:")
         btn_label.grid(row=4, column=0, padx=10, sticky=tk.W)
         btn = tk.Button(self.root, text='Download', font='bold', fg='red', width=30, 
-                        command=lambda: self.process(self.youtube_link_entry.get()))
+                        command=lambda: 
+                        self.process(self.youtube_link_entry.get()))
         btn.grid(row=4, column=1, columnspan=2, sticky=tk.W)
 
 
@@ -110,4 +117,5 @@ class View:
 
     """ Process the Link given by the user"""
     def process(self, link):
+        self.controller.set_download_location()
         self.controller.process(link)

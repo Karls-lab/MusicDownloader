@@ -7,17 +7,21 @@ class Controller:
         self.model = model
         self.view = view
 
+
     def set_download_location(self):
-        self.model.download_location = filedialog.askdirectory()
+        self.model.download_location = self.view.download_location_entry.get()
         self.view.download_location_entry.delete(0, tk.END)
         self.view.download_location_entry.insert(0, self.model.download_location)
-        print(self.model.download_location)
 
     def get_download_location(self):
-        return self.model.download_location
+        return self.view.download_location_entry.get()
+
+    def get_default_location(self):
+        return self.model.download_location.get()
 
     def get_recent_playlists(self):
         return self.model.get_recent_playlists()
+
 
     def change_audio_video(self):
         # Accessing the attribute from the model and updating its value
@@ -27,6 +31,7 @@ class Controller:
         else:
             self.model.video_stream = True
             self.view.audio_only_switch.deselect()
+
 
     def change_Quality(self):
         # Accessing the attribute from the model and updating its value

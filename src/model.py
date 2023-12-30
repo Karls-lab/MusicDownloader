@@ -10,7 +10,6 @@ class Model:
     def __init__(self, logger):
         self.logger = logger
         print("LOGGER: ", logger)
-        self.download_location = os.path.join(os.path.expanduser('~'),'Music')
         self.video_stream = True
         self.quality = "low"
         self.video_title = ""
@@ -62,7 +61,7 @@ class Model:
         # Clear the display
         # self.display_terminal.delete("1.0", tk.END)
         self.video_link = link
-
+        
         # self.disprint("processing...")
         # self.disprint(f"Saving music to: {self.download_location}\n")
         print(f"link: {link}")
