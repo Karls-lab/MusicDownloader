@@ -54,6 +54,12 @@ class Model:
         df.to_csv(recent_playlists, index=False)
 
 
+    def clean_video_title(self, title):
+        title = title.replace(" ", "_")
+        title = title.replace("/", "_")
+        return title
+
+
     """
     Pre-processing for the Video/Audio Download
     """
@@ -99,7 +105,7 @@ class Model:
             for video in yt_objects:
                 selected_stream = None
                 print(f"video: {video}")
-                self.video_title = video.title
+                self.video_title = self.clean_video_title(video.title)
                 print(f"video title: {self.video_title}")
                 try:
                     if self.video_stream: # Filter VIDEO LOGIC MP4 only
@@ -142,11 +148,12 @@ class Model:
                         print(f"Selected stream: {selected_stream}")
 
                     # Set the download path to the download location
-                    video_name = f"{video.author} - {video.title}.{selected_stream.subtype}"
+                    video_name = f"{video.author} - {self.video_title}.{selected_stream.subtype}"
                     self.download_video_path = f"{self.download_location}/{video_name}"
 
                     # Now Attempt to download the selected user Stream to the download location
-                    selected_stream.download(filename=f"{video.author} - {video.title}.{selected_stream.subtype}", output_path=f"{self.download_location}")
+                    selected_stream.download(filename=f"{video.author} - {self.video_title}.{selected_stream.subtype}", 
+                                             output_path=f"{self.download_location}")
 
                     # Download the thumbnail
                     self.download_thumbnail()
