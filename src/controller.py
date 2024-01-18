@@ -7,6 +7,11 @@ class Controller:
         self.model = model
         self.view = view
 
+    def browse_download_location(self):
+        curLocation = self.view.download_location_entry.get()
+        self.model.download_location = filedialog.askdirectory(initialdir=curLocation)
+        self.view.download_location_entry.delete(0, tk.END)
+        self.view.download_location_entry.insert(0, self.model.download_location)
 
     def set_download_location(self):
         self.model.download_location = self.view.download_location_entry.get()

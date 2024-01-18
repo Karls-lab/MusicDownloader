@@ -1,8 +1,10 @@
 FUTURE ADDITIONS:
 
-    1. Add a button to select download location
+    - Fix thumbnail for music. It glitches out
 
-    2. Add two lines for recent videos or shorten.
+    1. Add history to save location
+
+    1. Clean Video Title and name. Download name should be properly cleaned.
 
     2. Reconfigure logging to be helpful
 

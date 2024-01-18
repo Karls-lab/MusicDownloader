@@ -6,6 +6,8 @@ import numpy as np
 import tkinter as tk
 import requests
 
+
+
 class Model:
     def __init__(self, logger):
         self.logger = logger
@@ -86,7 +88,7 @@ class Model:
                 return yt.videos
             else: # if it's only one video
                 """ create a yt object, save name and link to recent downloads, download video"""
-                print("Found a YT object")
+                print("Found a YT ob    ject")
                 yt = YouTube(link)
                 self.update_recent_downloads(yt.title, self.video_link)
                 return [yt]
@@ -128,6 +130,7 @@ class Model:
 
                         print("Audio Stream")
                         self.audio_file = True
+                        print(f"video.streams!!!!!!: {video.streams}")
                         mp_streams = video.streams.filter(mime_type="audio/mp3")
                         if len(mp_streams) == 0:
                             mp_streams= video.streams.filter(mime_type="audio/mp4")
@@ -154,13 +157,6 @@ class Model:
                     # Now Attempt to download the selected user Stream to the download location
                     selected_stream.download(filename=f"{video.author} - {self.video_title}.{selected_stream.subtype}", 
                                              output_path=f"{self.download_location}")
-
-                    # Download the thumbnail
-                    self.download_thumbnail()
-
-                    # Combine the video and thumbnail if it's audio only 
-                    if self.audio_file:
-                        self.download_video_with_thumbnail()
                     
                 except Exception as e:
                     self.logger.error(f"Error Downloading Title, Skipping... {e}")
@@ -185,21 +181,3 @@ class Model:
         saveLocation = os.path.join(os.path.dirname(__file__), 'data')
         os.remove(f"{saveLocation}/video.png")
 
-
-    """
-    Downloads the Video, and combines it with the Thumbnail 
-    """
-    def download_video_with_thumbnail(self):
-        self.logger.info(f'download video path: {self.download_video_path}')
-        print(f'download video path: {self.download_video_path}')
-        print(f'download thumbnail path: {self.thumbnail_path}')
-        try:
-            audio = AudioFileClip(self.download_video_path)
-            thumbnail = ImageClip(self.thumbnail_path)
-            resultAudio = thumbnail.set_audio(audio)
-            resultAudio.duration = audio.duration
-            resultAudio.fps = 1
-            resultAudio.write_videofile(self.download_video_path, fps=1, codec='mpeg4')
-        except Exception as e:
-            print(f"Error combining video and thumbnail: {e}")
-            return

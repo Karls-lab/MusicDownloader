@@ -31,7 +31,7 @@ class View:
         save_location_label.grid(row=0, column=0, padx=10, sticky=tk.W)
         # Button 
         download_location_button = tk.Button(self.root, text="Browse", 
-                                            command=self.controller.set_download_location)
+                                            command=self.controller.browse_download_location)
         download_location_button.grid(row=0, column=0, padx=0, pady=0, sticky=tk.E)
         # Text Entry
         self.download_location_entry = tk.Entry(self.root, width=50)
