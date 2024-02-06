@@ -1,9 +1,6 @@
 from pytube import Playlist, YouTube
-from moviepy.editor import AudioFileClip, ImageClip
 import os
 import pandas as pd
-import numpy as np
-import tkinter as tk
 import requests
 
 

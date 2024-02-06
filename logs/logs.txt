@@ -5421,3 +5421,634 @@
 2024-01-17 17:11:55,713 - DEBUG - download remaining: 353578
 2024-01-17 17:11:55,862 - DEBUG - download remaining: 0
 2024-01-17 17:11:55,863 - DEBUG - download finished
+2024-01-17 17:14:01,386 - DEBUG - matched regex search: (?:v=|\/)([0-9A-Za-z_-]{11}).*
+2024-01-17 17:14:02,492 - DEBUG - applying descrambler
+2024-01-17 17:14:02,493 - DEBUG - finding initial function name
+2024-01-17 17:14:02,493 - DEBUG - Pattern failed: ytplayer\.config\s*=\s*
+2024-01-17 17:14:02,493 - DEBUG - Could not parse object.
+2024-01-17 17:14:02,507 - DEBUG - finished regex search, matched: (/s/player/[\w\d]+/[\w\d_/.]+/base\.js)
+2024-01-17 17:14:02,956 - DEBUG - finding initial function name
+2024-01-17 17:14:03,145 - DEBUG - finished regex search, matched: (?P<sig>[a-zA-Z0-9$]+)\s*=\s*function\(\s*a\s*\)\s*{\s*a\s*=\s*a\.split\(\s*""\s*\)
+2024-01-17 17:14:03,145 - DEBUG - getting transform plan
+2024-01-17 17:14:03,145 - DEBUG - matched regex search: VLa=function\(\w\){[a-z=\.\(\"\)]*;(.*);(?:.+)}
+2024-01-17 17:14:03,145 - DEBUG - getting transform object
+2024-01-17 17:14:03,146 - DEBUG - Finding throttling function name
+2024-01-17 17:14:03,147 - DEBUG - finished regex search, matched: a\.[a-zA-Z]\s*&&\s*\([a-z]\s*=\s*a\.get\("n"\)\)\s*&&\s*\([a-z]\s*=\s*([a-zA-Z0-9$]+)(\[\d+\])?\([a-z]\)
+2024-01-17 17:14:03,152 - DEBUG - Finding throttling function name
+2024-01-17 17:14:03,153 - DEBUG - finished regex search, matched: a\.[a-zA-Z]\s*&&\s*\([a-z]\s*=\s*a\.get\("n"\)\)\s*&&\s*\([a-z]\s*=\s*([a-zA-Z0-9$]+)(\[\d+\])?\([a-z]\)
+2024-01-17 17:14:03,164 - DEBUG - signature found, skip decipher
+2024-01-17 17:14:03,164 - DEBUG - signature found, skip decipher
+2024-01-17 17:14:03,164 - DEBUG - signature found, skip decipher
+2024-01-17 17:14:03,164 - DEBUG - signature found, skip decipher
+2024-01-17 17:14:03,164 - DEBUG - signature found, skip decipher
+2024-01-17 17:14:03,164 - DEBUG - signature found, skip decipher
+2024-01-17 17:14:03,164 - DEBUG - signature found, skip decipher
+2024-01-17 17:14:03,164 - DEBUG - signature found, skip decipher
+2024-01-17 17:14:03,164 - DEBUG - signature found, skip decipher
+2024-01-17 17:14:03,164 - DEBUG - signature found, skip decipher
+2024-01-17 17:14:03,164 - DEBUG - signature found, skip decipher
+2024-01-17 17:14:03,164 - DEBUG - signature found, skip decipher
+2024-01-17 17:14:03,164 - DEBUG - signature found, skip decipher
+2024-01-17 17:14:03,164 - DEBUG - signature found, skip decipher
+2024-01-17 17:14:03,165 - DEBUG - signature found, skip decipher
+2024-01-17 17:14:03,165 - DEBUG - signature found, skip decipher
+2024-01-17 17:14:03,165 - DEBUG - signature found, skip decipher
+2024-01-17 17:14:03,165 - DEBUG - signature found, skip decipher
+2024-01-17 17:14:03,165 - DEBUG - signature found, skip decipher
+2024-01-17 17:14:03,223 - DEBUG - downloading (51029833 total bytes) file to /home/x1b3d3ad/Music/Macroblank - Macroblank_-_entropy.mp4
+2024-01-17 17:14:03,850 - DEBUG - download remaining: 41592649
+2024-01-17 17:14:04,498 - DEBUG - download remaining: 32155465
+2024-01-17 17:14:05,062 - DEBUG - download remaining: 22718281
+2024-01-17 17:14:05,710 - DEBUG - download remaining: 13281097
+2024-01-17 17:14:06,269 - DEBUG - download remaining: 3843913
+2024-01-17 17:14:06,605 - DEBUG - download remaining: 0
+2024-01-17 17:14:06,647 - DEBUG - download finished
+2024-01-22 09:46:20,048 - DEBUG - matched regex search: (?:v=|\/)([0-9A-Za-z_-]{11}).*
+2024-01-22 09:46:21,450 - DEBUG - applying descrambler
+2024-01-22 09:46:21,451 - DEBUG - finding initial function name
+2024-01-22 09:46:21,452 - DEBUG - Pattern failed: ytplayer\.config\s*=\s*
+2024-01-22 09:46:21,452 - DEBUG - Could not parse object.
+2024-01-22 09:46:21,465 - DEBUG - finished regex search, matched: (/s/player/[\w\d]+/[\w\d_/.]+/base\.js)
+2024-01-22 09:46:21,900 - DEBUG - finding initial function name
+2024-01-22 09:46:22,090 - DEBUG - finished regex search, matched: (?P<sig>[a-zA-Z0-9$]+)\s*=\s*function\(\s*a\s*\)\s*{\s*a\s*=\s*a\.split\(\s*""\s*\)
+2024-01-22 09:46:22,090 - DEBUG - getting transform plan
+2024-01-22 09:46:22,091 - DEBUG - matched regex search: VLa=function\(\w\){[a-z=\.\(\"\)]*;(.*);(?:.+)}
+2024-01-22 09:46:22,091 - DEBUG - getting transform object
+2024-01-22 09:46:22,092 - DEBUG - Finding throttling function name
+2024-01-22 09:46:22,092 - DEBUG - finished regex search, matched: a\.[a-zA-Z]\s*&&\s*\([a-z]\s*=\s*a\.get\("n"\)\)\s*&&\s*\([a-z]\s*=\s*([a-zA-Z0-9$]+)(\[\d+\])?\([a-z]\)
+2024-01-22 09:46:22,098 - DEBUG - Finding throttling function name
+2024-01-22 09:46:22,098 - DEBUG - finished regex search, matched: a\.[a-zA-Z]\s*&&\s*\([a-z]\s*=\s*a\.get\("n"\)\)\s*&&\s*\([a-z]\s*=\s*([a-zA-Z0-9$]+)(\[\d+\])?\([a-z]\)
+2024-01-22 09:46:22,109 - DEBUG - signature found, skip decipher
+2024-01-22 09:46:22,109 - DEBUG - signature found, skip decipher
+2024-01-22 09:46:22,109 - DEBUG - signature found, skip decipher
+2024-01-22 09:46:22,109 - DEBUG - signature found, skip decipher
+2024-01-22 09:46:22,109 - DEBUG - signature found, skip decipher
+2024-01-22 09:46:22,109 - DEBUG - signature found, skip decipher
+2024-01-22 09:46:22,109 - DEBUG - signature found, skip decipher
+2024-01-22 09:46:22,109 - DEBUG - signature found, skip decipher
+2024-01-22 09:46:22,109 - DEBUG - signature found, skip decipher
+2024-01-22 09:46:22,109 - DEBUG - signature found, skip decipher
+2024-01-22 09:46:22,109 - DEBUG - signature found, skip decipher
+2024-01-22 09:46:22,109 - DEBUG - signature found, skip decipher
+2024-01-22 09:46:22,109 - DEBUG - signature found, skip decipher
+2024-01-22 09:46:22,109 - DEBUG - signature found, skip decipher
+2024-01-22 09:46:22,109 - DEBUG - signature found, skip decipher
+2024-01-22 09:46:22,109 - DEBUG - signature found, skip decipher
+2024-01-22 09:46:22,109 - DEBUG - signature found, skip decipher
+2024-01-22 09:46:22,349 - DEBUG - downloading (99885299 total bytes) file to /home/x1b3d3ad/Videos/Anton Petrov - Mindblowing_Video_of_Plants_Talking_to_Each_Other_In_Real_Time.mp4
+2024-01-22 09:46:22,895 - DEBUG - download remaining: 90448115
+2024-01-22 09:46:23,295 - DEBUG - download remaining: 81010931
+2024-01-22 09:46:23,736 - DEBUG - download remaining: 71573747
+2024-01-22 09:46:24,125 - DEBUG - download remaining: 62136563
+2024-01-22 09:46:24,540 - DEBUG - download remaining: 52699379
+2024-01-22 09:46:24,937 - DEBUG - download remaining: 43262195
+2024-01-22 09:46:25,326 - DEBUG - download remaining: 33825011
+2024-01-22 09:46:25,726 - DEBUG - download remaining: 24387827
+2024-01-22 09:46:26,088 - DEBUG - download remaining: 14950643
+2024-01-22 09:46:26,480 - DEBUG - download remaining: 5513459
+2024-01-22 09:46:26,760 - DEBUG - download remaining: 0
+2024-01-22 09:46:26,761 - DEBUG - download finished
+2024-01-22 09:46:57,044 - DEBUG - matched regex search: (?:v=|\/)([0-9A-Za-z_-]{11}).*
+2024-01-22 09:46:58,514 - DEBUG - applying descrambler
+2024-01-22 09:46:58,515 - DEBUG - finding initial function name
+2024-01-22 09:46:58,515 - DEBUG - Pattern failed: ytplayer\.config\s*=\s*
+2024-01-22 09:46:58,515 - DEBUG - Could not parse object.
+2024-01-22 09:46:58,527 - DEBUG - finished regex search, matched: (/s/player/[\w\d]+/[\w\d_/.]+/base\.js)
+2024-01-22 09:46:58,527 - DEBUG - finding initial function name
+2024-01-22 09:46:58,718 - DEBUG - finished regex search, matched: (?P<sig>[a-zA-Z0-9$]+)\s*=\s*function\(\s*a\s*\)\s*{\s*a\s*=\s*a\.split\(\s*""\s*\)
+2024-01-22 09:46:58,718 - DEBUG - getting transform plan
+2024-01-22 09:46:58,718 - DEBUG - matched regex search: VLa=function\(\w\){[a-z=\.\(\"\)]*;(.*);(?:.+)}
+2024-01-22 09:46:58,718 - DEBUG - getting transform object
+2024-01-22 09:46:58,719 - DEBUG - Finding throttling function name
+2024-01-22 09:46:58,720 - DEBUG - finished regex search, matched: a\.[a-zA-Z]\s*&&\s*\([a-z]\s*=\s*a\.get\("n"\)\)\s*&&\s*\([a-z]\s*=\s*([a-zA-Z0-9$]+)(\[\d+\])?\([a-z]\)
+2024-01-22 09:46:58,725 - DEBUG - Finding throttling function name
+2024-01-22 09:46:58,726 - DEBUG - finished regex search, matched: a\.[a-zA-Z]\s*&&\s*\([a-z]\s*=\s*a\.get\("n"\)\)\s*&&\s*\([a-z]\s*=\s*([a-zA-Z0-9$]+)(\[\d+\])?\([a-z]\)
+2024-01-22 09:46:58,736 - DEBUG - signature found, skip decipher
+2024-01-22 09:46:58,736 - DEBUG - signature found, skip decipher
+2024-01-22 09:46:58,736 - DEBUG - signature found, skip decipher
+2024-01-22 09:46:58,736 - DEBUG - signature found, skip decipher
+2024-01-22 09:46:58,736 - DEBUG - signature found, skip decipher
+2024-01-22 09:46:58,736 - DEBUG - signature found, skip decipher
+2024-01-22 09:46:58,736 - DEBUG - signature found, skip decipher
+2024-01-22 09:46:58,736 - DEBUG - signature found, skip decipher
+2024-01-22 09:46:58,736 - DEBUG - signature found, skip decipher
+2024-01-22 09:46:58,736 - DEBUG - signature found, skip decipher
+2024-01-22 09:46:58,736 - DEBUG - signature found, skip decipher
+2024-01-22 09:46:58,736 - DEBUG - signature found, skip decipher
+2024-01-22 09:46:58,736 - DEBUG - signature found, skip decipher
+2024-01-22 09:46:58,736 - DEBUG - signature found, skip decipher
+2024-01-22 09:46:58,737 - DEBUG - signature found, skip decipher
+2024-01-22 09:46:58,737 - DEBUG - signature found, skip decipher
+2024-01-22 09:46:58,737 - DEBUG - signature found, skip decipher
+2024-01-22 09:46:58,737 - DEBUG - signature found, skip decipher
+2024-01-22 09:46:58,737 - DEBUG - signature found, skip decipher
+2024-01-22 09:46:58,737 - DEBUG - signature found, skip decipher
+2024-01-22 09:46:58,737 - DEBUG - signature found, skip decipher
+2024-01-22 09:46:58,999 - DEBUG - downloading (65689962 total bytes) file to /home/x1b3d3ad/Videos/Montemayor - The_Sinking_of_the_USS_Wasp:_The_Most_Devastating_Torpedo_Attack_of_WW2.mp4
+2024-01-22 09:46:59,735 - DEBUG - download remaining: 56252778
+2024-01-22 09:47:00,494 - DEBUG - download remaining: 46815594
+2024-01-22 09:47:01,072 - DEBUG - download remaining: 37378410
+2024-01-22 09:47:01,640 - DEBUG - download remaining: 27941226
+2024-01-22 09:47:02,134 - DEBUG - download remaining: 18504042
+2024-01-22 09:47:02,626 - DEBUG - download remaining: 9066858
+2024-01-22 09:47:03,188 - DEBUG - download remaining: 0
+2024-01-22 09:47:03,189 - DEBUG - download finished
+2024-01-28 11:06:30,959 - DEBUG - matched regex search: (?:v=|\/)([0-9A-Za-z_-]{11}).*
+2024-01-28 11:06:34,062 - DEBUG - applying descrambler
+2024-01-28 11:06:34,063 - DEBUG - finding initial function name
+2024-01-28 11:06:34,063 - DEBUG - Pattern failed: ytplayer\.config\s*=\s*
+2024-01-28 11:06:34,064 - DEBUG - Could not parse object.
+2024-01-28 11:06:34,135 - DEBUG - finished regex search, matched: (/s/player/[\w\d]+/[\w\d_/.]+/base\.js)
+2024-01-28 11:06:35,683 - DEBUG - finding initial function name
+2024-01-28 11:06:35,871 - DEBUG - finished regex search, matched: (?P<sig>[a-zA-Z0-9$]+)\s*=\s*function\(\s*a\s*\)\s*{\s*a\s*=\s*a\.split\(\s*""\s*\)
+2024-01-28 11:06:35,872 - DEBUG - getting transform plan
+2024-01-28 11:06:35,872 - DEBUG - matched regex search: YLa=function\(\w\){[a-z=\.\(\"\)]*;(.*);(?:.+)}
+2024-01-28 11:06:35,872 - DEBUG - getting transform object
+2024-01-28 11:06:35,873 - DEBUG - Finding throttling function name
+2024-01-28 11:06:35,874 - DEBUG - finished regex search, matched: a\.[a-zA-Z]\s*&&\s*\([a-z]\s*=\s*a\.get\("n"\)\)\s*&&\s*\([a-z]\s*=\s*([a-zA-Z0-9$]+)(\[\d+\])?\([a-z]\)
+2024-01-28 11:06:35,877 - DEBUG - Finding throttling function name
+2024-01-28 11:06:35,878 - DEBUG - finished regex search, matched: a\.[a-zA-Z]\s*&&\s*\([a-z]\s*=\s*a\.get\("n"\)\)\s*&&\s*\([a-z]\s*=\s*([a-zA-Z0-9$]+)(\[\d+\])?\([a-z]\)
+2024-01-28 11:06:35,880 - DEBUG - signature found, skip decipher
+2024-01-28 11:06:35,880 - DEBUG - signature found, skip decipher
+2024-01-28 11:06:35,880 - DEBUG - signature found, skip decipher
+2024-01-28 11:06:35,881 - DEBUG - signature found, skip decipher
+2024-01-28 11:06:35,881 - DEBUG - signature found, skip decipher
+2024-01-28 11:06:35,881 - DEBUG - signature found, skip decipher
+2024-01-28 11:06:35,881 - DEBUG - signature found, skip decipher
+2024-01-28 11:06:35,881 - DEBUG - signature found, skip decipher
+2024-01-28 11:06:35,881 - DEBUG - signature found, skip decipher
+2024-01-28 11:06:35,881 - DEBUG - signature found, skip decipher
+2024-01-28 11:06:35,881 - DEBUG - signature found, skip decipher
+2024-01-28 11:06:35,881 - DEBUG - signature found, skip decipher
+2024-01-28 11:06:35,881 - DEBUG - signature found, skip decipher
+2024-01-28 11:06:35,881 - DEBUG - signature found, skip decipher
+2024-01-28 11:06:35,881 - DEBUG - signature found, skip decipher
+2024-01-28 11:06:35,881 - DEBUG - signature found, skip decipher
+2024-01-28 11:06:35,881 - DEBUG - signature found, skip decipher
+2024-01-28 11:06:35,881 - DEBUG - signature found, skip decipher
+2024-01-28 11:06:35,881 - DEBUG - signature found, skip decipher
+2024-01-28 11:06:36,165 - DEBUG - downloading (95832615 total bytes) file to /home/x1b3d3ad/Music/Oblique Occasions - Oblique_Occasions_-_sagittarius_mix.mp4
+2024-01-28 11:06:47,163 - DEBUG - download remaining: 86395431
+2024-01-28 11:06:51,741 - DEBUG - download remaining: 76958247
+2024-01-28 11:07:05,158 - DEBUG - download remaining: 67521063
+2024-01-28 11:07:09,789 - DEBUG - download remaining: 58083879
+2024-01-28 11:07:14,116 - DEBUG - download remaining: 48646695
+2024-01-28 11:07:18,829 - DEBUG - download remaining: 39209511
+2024-01-28 11:07:24,409 - DEBUG - download remaining: 29772327
+2024-01-28 11:07:29,110 - DEBUG - download remaining: 20335143
+2024-01-28 11:07:32,525 - DEBUG - download remaining: 10897959
+2024-01-28 11:07:48,951 - DEBUG - download remaining: 1460775
+2024-01-28 11:07:49,604 - DEBUG - download remaining: 0
+2024-01-28 11:07:49,605 - DEBUG - download finished
+2024-01-29 23:24:03,749 - DEBUG - matched regex search: (?:v=|\/)([0-9A-Za-z_-]{11}).*
+2024-01-29 23:24:05,019 - DEBUG - applying descrambler
+2024-01-29 23:24:05,019 - DEBUG - finding initial function name
+2024-01-29 23:24:05,020 - DEBUG - Pattern failed: ytplayer\.config\s*=\s*
+2024-01-29 23:24:05,020 - DEBUG - Could not parse object.
+2024-01-29 23:24:05,030 - DEBUG - finished regex search, matched: (/s/player/[\w\d]+/[\w\d_/.]+/base\.js)
+2024-01-29 23:24:05,273 - DEBUG - finding initial function name
+2024-01-29 23:24:05,465 - DEBUG - finished regex search, matched: (?P<sig>[a-zA-Z0-9$]+)\s*=\s*function\(\s*a\s*\)\s*{\s*a\s*=\s*a\.split\(\s*""\s*\)
+2024-01-29 23:24:05,465 - DEBUG - getting transform plan
+2024-01-29 23:24:05,466 - DEBUG - matched regex search: YLa=function\(\w\){[a-z=\.\(\"\)]*;(.*);(?:.+)}
+2024-01-29 23:24:05,466 - DEBUG - getting transform object
+2024-01-29 23:24:05,467 - DEBUG - Finding throttling function name
+2024-01-29 23:24:05,467 - DEBUG - finished regex search, matched: a\.[a-zA-Z]\s*&&\s*\([a-z]\s*=\s*a\.get\("n"\)\)\s*&&\s*\([a-z]\s*=\s*([a-zA-Z0-9$]+)(\[\d+\])?\([a-z]\)
+2024-01-29 23:24:05,471 - DEBUG - Finding throttling function name
+2024-01-29 23:24:05,471 - DEBUG - finished regex search, matched: a\.[a-zA-Z]\s*&&\s*\([a-z]\s*=\s*a\.get\("n"\)\)\s*&&\s*\([a-z]\s*=\s*([a-zA-Z0-9$]+)(\[\d+\])?\([a-z]\)
+2024-01-29 23:24:05,474 - DEBUG - signature found, skip decipher
+2024-01-29 23:24:05,474 - DEBUG - signature found, skip decipher
+2024-01-29 23:24:05,474 - DEBUG - signature found, skip decipher
+2024-01-29 23:24:05,474 - DEBUG - signature found, skip decipher
+2024-01-29 23:24:05,474 - DEBUG - signature found, skip decipher
+2024-01-29 23:24:05,474 - DEBUG - signature found, skip decipher
+2024-01-29 23:24:05,474 - DEBUG - signature found, skip decipher
+2024-01-29 23:24:05,474 - DEBUG - signature found, skip decipher
+2024-01-29 23:24:05,474 - DEBUG - signature found, skip decipher
+2024-01-29 23:24:05,474 - DEBUG - signature found, skip decipher
+2024-01-29 23:24:05,474 - DEBUG - signature found, skip decipher
+2024-01-29 23:24:05,474 - DEBUG - signature found, skip decipher
+2024-01-29 23:24:05,475 - DEBUG - signature found, skip decipher
+2024-01-29 23:24:05,475 - DEBUG - signature found, skip decipher
+2024-01-29 23:24:05,475 - DEBUG - signature found, skip decipher
+2024-01-29 23:24:05,475 - DEBUG - signature found, skip decipher
+2024-01-29 23:24:05,475 - DEBUG - signature found, skip decipher
+2024-01-29 23:24:05,475 - DEBUG - signature found, skip decipher
+2024-01-29 23:24:05,475 - DEBUG - signature found, skip decipher
+2024-01-29 23:24:05,519 - DEBUG - downloading (50934451 total bytes) file to /home/x1b3d3ad/Music/Macroblank - Macroblank_-_保持.mp4
+2024-01-29 23:24:06,529 - DEBUG - download remaining: 41497267
+2024-01-29 23:24:07,075 - DEBUG - download remaining: 32060083
+2024-01-29 23:24:07,580 - DEBUG - download remaining: 22622899
+2024-01-29 23:24:08,118 - DEBUG - download remaining: 13185715
+2024-01-29 23:24:08,731 - DEBUG - download remaining: 3748531
+2024-01-29 23:24:09,213 - DEBUG - download remaining: 0
+2024-01-29 23:24:09,214 - DEBUG - download finished
+2024-01-29 23:38:05,484 - DEBUG - matched regex search: (?:v=|\/)([0-9A-Za-z_-]{11}).*
+2024-01-29 23:38:07,035 - DEBUG - applying descrambler
+2024-01-29 23:38:07,036 - DEBUG - finding initial function name
+2024-01-29 23:38:07,036 - DEBUG - Pattern failed: ytplayer\.config\s*=\s*
+2024-01-29 23:38:07,036 - DEBUG - Could not parse object.
+2024-01-29 23:38:07,049 - DEBUG - finished regex search, matched: (/s/player/[\w\d]+/[\w\d_/.]+/base\.js)
+2024-01-29 23:38:07,049 - DEBUG - finding initial function name
+2024-01-29 23:38:07,234 - DEBUG - finished regex search, matched: (?P<sig>[a-zA-Z0-9$]+)\s*=\s*function\(\s*a\s*\)\s*{\s*a\s*=\s*a\.split\(\s*""\s*\)
+2024-01-29 23:38:07,235 - DEBUG - getting transform plan
+2024-01-29 23:38:07,235 - DEBUG - matched regex search: YLa=function\(\w\){[a-z=\.\(\"\)]*;(.*);(?:.+)}
+2024-01-29 23:38:07,235 - DEBUG - getting transform object
+2024-01-29 23:38:07,236 - DEBUG - Finding throttling function name
+2024-01-29 23:38:07,236 - DEBUG - finished regex search, matched: a\.[a-zA-Z]\s*&&\s*\([a-z]\s*=\s*a\.get\("n"\)\)\s*&&\s*\([a-z]\s*=\s*([a-zA-Z0-9$]+)(\[\d+\])?\([a-z]\)
+2024-01-29 23:38:07,239 - DEBUG - Finding throttling function name
+2024-01-29 23:38:07,240 - DEBUG - finished regex search, matched: a\.[a-zA-Z]\s*&&\s*\([a-z]\s*=\s*a\.get\("n"\)\)\s*&&\s*\([a-z]\s*=\s*([a-zA-Z0-9$]+)(\[\d+\])?\([a-z]\)
+2024-01-29 23:38:07,242 - DEBUG - signature found, skip decipher
+2024-01-29 23:38:07,242 - DEBUG - signature found, skip decipher
+2024-01-29 23:38:07,242 - DEBUG - signature found, skip decipher
+2024-01-29 23:38:07,242 - DEBUG - signature found, skip decipher
+2024-01-29 23:38:07,242 - DEBUG - signature found, skip decipher
+2024-01-29 23:38:07,242 - DEBUG - signature found, skip decipher
+2024-01-29 23:38:07,242 - DEBUG - signature found, skip decipher
+2024-01-29 23:38:07,242 - DEBUG - signature found, skip decipher
+2024-01-29 23:38:07,243 - DEBUG - signature found, skip decipher
+2024-01-29 23:38:07,243 - DEBUG - signature found, skip decipher
+2024-01-29 23:38:07,243 - DEBUG - signature found, skip decipher
+2024-01-29 23:38:07,243 - DEBUG - signature found, skip decipher
+2024-01-29 23:38:07,243 - DEBUG - signature found, skip decipher
+2024-01-29 23:38:07,243 - DEBUG - signature found, skip decipher
+2024-01-29 23:38:07,243 - DEBUG - signature found, skip decipher
+2024-01-29 23:38:07,243 - DEBUG - signature found, skip decipher
+2024-01-29 23:38:07,243 - DEBUG - signature found, skip decipher
+2024-01-29 23:38:07,243 - DEBUG - signature found, skip decipher
+2024-01-29 23:38:07,243 - DEBUG - signature found, skip decipher
+2024-01-29 23:38:07,243 - DEBUG - signature found, skip decipher
+2024-01-29 23:38:07,243 - DEBUG - signature found, skip decipher
+2024-01-29 23:38:07,297 - DEBUG - downloading (974328 total bytes) file to /home/x1b3d3ad/Music/Warner Bros. Pictures - Dune:_Part_Two_|_Official_Trailer_3.mp4
+2024-01-29 23:38:07,760 - DEBUG - download remaining: 0
+2024-01-29 23:38:07,762 - DEBUG - download finished
+2024-02-01 12:03:07,895 - DEBUG - matched regex search: (?:v=|\/)([0-9A-Za-z_-]{11}).*
+2024-02-01 12:03:09,435 - DEBUG - applying descrambler
+2024-02-01 12:03:09,436 - DEBUG - finding initial function name
+2024-02-01 12:03:09,437 - DEBUG - Pattern failed: ytplayer\.config\s*=\s*
+2024-02-01 12:03:09,437 - DEBUG - Could not parse object.
+2024-02-01 12:03:09,447 - DEBUG - finished regex search, matched: (/s/player/[\w\d]+/[\w\d_/.]+/base\.js)
+2024-02-01 12:03:09,810 - DEBUG - finding initial function name
+2024-02-01 12:03:10,011 - DEBUG - finished regex search, matched: (?P<sig>[a-zA-Z0-9$]+)\s*=\s*function\(\s*a\s*\)\s*{\s*a\s*=\s*a\.split\(\s*""\s*\)
+2024-02-01 12:03:10,011 - DEBUG - getting transform plan
+2024-02-01 12:03:10,011 - DEBUG - matched regex search: cMa=function\(\w\){[a-z=\.\(\"\)]*;(.*);(?:.+)}
+2024-02-01 12:03:10,011 - DEBUG - getting transform object
+2024-02-01 12:03:10,013 - DEBUG - Finding throttling function name
+2024-02-01 12:03:10,013 - DEBUG - finished regex search, matched: a\.[a-zA-Z]\s*&&\s*\([a-z]\s*=\s*a\.get\("n"\)\)\s*&&\s*\([a-z]\s*=\s*([a-zA-Z0-9$]+)(\[\d+\])?\([a-z]\)
+2024-02-01 12:03:10,016 - DEBUG - Finding throttling function name
+2024-02-01 12:03:10,016 - DEBUG - finished regex search, matched: a\.[a-zA-Z]\s*&&\s*\([a-z]\s*=\s*a\.get\("n"\)\)\s*&&\s*\([a-z]\s*=\s*([a-zA-Z0-9$]+)(\[\d+\])?\([a-z]\)
+2024-02-01 12:03:10,019 - DEBUG - signature found, skip decipher
+2024-02-01 12:03:10,019 - DEBUG - signature found, skip decipher
+2024-02-01 12:03:10,019 - DEBUG - signature found, skip decipher
+2024-02-01 12:03:10,019 - DEBUG - signature found, skip decipher
+2024-02-01 12:03:10,019 - DEBUG - signature found, skip decipher
+2024-02-01 12:03:10,019 - DEBUG - signature found, skip decipher
+2024-02-01 12:03:10,019 - DEBUG - signature found, skip decipher
+2024-02-01 12:03:10,019 - DEBUG - signature found, skip decipher
+2024-02-01 12:03:10,019 - DEBUG - signature found, skip decipher
+2024-02-01 12:03:10,726 - DEBUG - downloading (74146960 total bytes) file to /home/x1b3d3ad/Videos/Patrick Loeber - Teach_AI_To_Play_Snake_-_Reinforcement_Learning_Tutorial_With_PyTorch_And_Pygame_(Part_3).mp4
+2024-02-01 12:03:13,014 - DEBUG - download remaining: 64709776
+2024-02-01 12:03:14,596 - DEBUG - download remaining: 55272592
+2024-02-01 12:03:16,310 - DEBUG - download remaining: 45835408
+2024-02-01 12:03:17,718 - DEBUG - download remaining: 36398224
+2024-02-01 12:03:19,049 - DEBUG - download remaining: 26961040
+2024-02-01 12:03:20,567 - DEBUG - download remaining: 17523856
+2024-02-01 12:03:22,339 - DEBUG - download remaining: 8086672
+2024-02-01 12:03:23,614 - DEBUG - download remaining: 0
+2024-02-01 12:03:23,615 - DEBUG - download finished
+2024-02-01 12:03:33,582 - DEBUG - matched regex search: (?:v=|\/)([0-9A-Za-z_-]{11}).*
+2024-02-01 12:03:35,065 - DEBUG - applying descrambler
+2024-02-01 12:03:35,066 - DEBUG - finding initial function name
+2024-02-01 12:03:35,067 - DEBUG - Pattern failed: ytplayer\.config\s*=\s*
+2024-02-01 12:03:35,067 - DEBUG - Could not parse object.
+2024-02-01 12:03:35,080 - DEBUG - finished regex search, matched: (/s/player/[\w\d]+/[\w\d_/.]+/base\.js)
+2024-02-01 12:03:35,080 - DEBUG - finding initial function name
+2024-02-01 12:03:35,270 - DEBUG - finished regex search, matched: (?P<sig>[a-zA-Z0-9$]+)\s*=\s*function\(\s*a\s*\)\s*{\s*a\s*=\s*a\.split\(\s*""\s*\)
+2024-02-01 12:03:35,270 - DEBUG - getting transform plan
+2024-02-01 12:03:35,271 - DEBUG - matched regex search: cMa=function\(\w\){[a-z=\.\(\"\)]*;(.*);(?:.+)}
+2024-02-01 12:03:35,271 - DEBUG - getting transform object
+2024-02-01 12:03:35,271 - DEBUG - Finding throttling function name
+2024-02-01 12:03:35,272 - DEBUG - finished regex search, matched: a\.[a-zA-Z]\s*&&\s*\([a-z]\s*=\s*a\.get\("n"\)\)\s*&&\s*\([a-z]\s*=\s*([a-zA-Z0-9$]+)(\[\d+\])?\([a-z]\)
+2024-02-01 12:03:35,274 - DEBUG - Finding throttling function name
+2024-02-01 12:03:35,275 - DEBUG - finished regex search, matched: a\.[a-zA-Z]\s*&&\s*\([a-z]\s*=\s*a\.get\("n"\)\)\s*&&\s*\([a-z]\s*=\s*([a-zA-Z0-9$]+)(\[\d+\])?\([a-z]\)
+2024-02-01 12:03:35,277 - DEBUG - signature found, skip decipher
+2024-02-01 12:03:35,277 - DEBUG - signature found, skip decipher
+2024-02-01 12:03:35,277 - DEBUG - signature found, skip decipher
+2024-02-01 12:03:35,277 - DEBUG - signature found, skip decipher
+2024-02-01 12:03:35,277 - DEBUG - signature found, skip decipher
+2024-02-01 12:03:35,278 - DEBUG - signature found, skip decipher
+2024-02-01 12:03:35,278 - DEBUG - signature found, skip decipher
+2024-02-01 12:03:35,278 - DEBUG - signature found, skip decipher
+2024-02-01 12:03:35,278 - DEBUG - signature found, skip decipher
+2024-02-01 12:03:35,278 - DEBUG - signature found, skip decipher
+2024-02-01 12:03:35,278 - DEBUG - signature found, skip decipher
+2024-02-01 12:03:35,278 - DEBUG - signature found, skip decipher
+2024-02-01 12:03:35,278 - DEBUG - signature found, skip decipher
+2024-02-01 12:03:35,278 - DEBUG - signature found, skip decipher
+2024-02-01 12:03:35,278 - DEBUG - signature found, skip decipher
+2024-02-01 12:03:35,278 - DEBUG - signature found, skip decipher
+2024-02-01 12:03:35,278 - DEBUG - signature found, skip decipher
+2024-02-01 12:03:35,278 - DEBUG - signature found, skip decipher
+2024-02-01 12:03:35,278 - DEBUG - signature found, skip decipher
+2024-02-01 12:03:35,661 - DEBUG - downloading (61170563 total bytes) file to /home/x1b3d3ad/Videos/Patrick Loeber - Teach_AI_To_Play_Snake_-_Reinforcement_Learning_Tutorial_With_PyTorch_And_Pygame_(Part_2).mp4
+2024-02-01 12:03:38,328 - DEBUG - download remaining: 51733379
+2024-02-01 12:03:41,515 - DEBUG - download remaining: 42296195
+2024-02-01 12:03:44,369 - DEBUG - download remaining: 32859011
+2024-02-01 12:03:47,808 - DEBUG - download remaining: 23421827
+2024-02-01 12:03:50,936 - DEBUG - download remaining: 13984643
+2024-02-01 12:03:53,623 - DEBUG - download remaining: 4547459
+2024-02-01 12:03:55,065 - DEBUG - download remaining: 0
+2024-02-01 12:03:55,067 - DEBUG - download finished
+2024-02-01 12:03:59,381 - DEBUG - matched regex search: (?:v=|\/)([0-9A-Za-z_-]{11}).*
+2024-02-01 12:04:01,184 - DEBUG - applying descrambler
+2024-02-01 12:04:01,185 - DEBUG - finding initial function name
+2024-02-01 12:04:01,186 - DEBUG - Pattern failed: ytplayer\.config\s*=\s*
+2024-02-01 12:04:01,186 - DEBUG - Could not parse object.
+2024-02-01 12:04:01,195 - DEBUG - finished regex search, matched: (/s/player/[\w\d]+/[\w\d_/.]+/base\.js)
+2024-02-01 12:04:02,100 - DEBUG - finding initial function name
+2024-02-01 12:04:02,290 - DEBUG - finished regex search, matched: (?P<sig>[a-zA-Z0-9$]+)\s*=\s*function\(\s*a\s*\)\s*{\s*a\s*=\s*a\.split\(\s*""\s*\)
+2024-02-01 12:04:02,290 - DEBUG - getting transform plan
+2024-02-01 12:04:02,291 - DEBUG - matched regex search: hMa=function\(\w\){[a-z=\.\(\"\)]*;(.*);(?:.+)}
+2024-02-01 12:04:02,291 - DEBUG - getting transform object
+2024-02-01 12:04:02,292 - DEBUG - Finding throttling function name
+2024-02-01 12:04:02,292 - DEBUG - finished regex search, matched: a\.[a-zA-Z]\s*&&\s*\([a-z]\s*=\s*a\.get\("n"\)\)\s*&&\s*\([a-z]\s*=\s*([a-zA-Z0-9$]+)(\[\d+\])?\([a-z]\)
+2024-02-01 12:04:02,582 - DEBUG - Finding throttling function name
+2024-02-01 12:04:02,583 - DEBUG - finished regex search, matched: a\.[a-zA-Z]\s*&&\s*\([a-z]\s*=\s*a\.get\("n"\)\)\s*&&\s*\([a-z]\s*=\s*([a-zA-Z0-9$]+)(\[\d+\])?\([a-z]\)
+2024-02-01 12:04:02,871 - DEBUG - signature found, skip decipher
+2024-02-01 12:04:02,871 - DEBUG - signature found, skip decipher
+2024-02-01 12:04:02,871 - DEBUG - signature found, skip decipher
+2024-02-01 12:04:02,871 - DEBUG - signature found, skip decipher
+2024-02-01 12:04:02,871 - DEBUG - signature found, skip decipher
+2024-02-01 12:04:02,871 - DEBUG - signature found, skip decipher
+2024-02-01 12:04:02,871 - DEBUG - signature found, skip decipher
+2024-02-01 12:04:02,871 - DEBUG - signature found, skip decipher
+2024-02-01 12:04:02,871 - DEBUG - signature found, skip decipher
+2024-02-01 12:04:03,480 - DEBUG - downloading (65794773 total bytes) file to /home/x1b3d3ad/Videos/Patrick Loeber - Teach_AI_To_Play_Snake_-_Reinforcement_Learning_Tutorial_With_PyTorch_And_Pygame_(Part_4).mp4
+2024-02-01 12:04:05,236 - DEBUG - download remaining: 56357589
+2024-02-01 12:04:07,095 - DEBUG - download remaining: 46920405
+2024-02-01 12:04:08,745 - DEBUG - download remaining: 37483221
+2024-02-01 12:04:10,695 - DEBUG - download remaining: 28046037
+2024-02-01 12:04:12,594 - DEBUG - download remaining: 18608853
+2024-02-01 12:04:13,575 - DEBUG - download remaining: 9171669
+2024-02-01 12:04:15,334 - DEBUG - download remaining: 0
+2024-02-01 12:04:15,335 - DEBUG - download finished
+2024-02-02 00:38:55,900 - DEBUG - matched regex search: (?:v=|\/)([0-9A-Za-z_-]{11}).*
+2024-02-02 00:38:56,942 - DEBUG - applying descrambler
+2024-02-02 00:38:56,942 - DEBUG - finding initial function name
+2024-02-02 00:38:56,943 - DEBUG - Pattern failed: ytplayer\.config\s*=\s*
+2024-02-02 00:38:56,943 - DEBUG - Could not parse object.
+2024-02-02 00:38:56,954 - DEBUG - finished regex search, matched: (/s/player/[\w\d]+/[\w\d_/.]+/base\.js)
+2024-02-02 00:38:57,212 - DEBUG - finding initial function name
+2024-02-02 00:38:57,411 - DEBUG - finished regex search, matched: (?P<sig>[a-zA-Z0-9$]+)\s*=\s*function\(\s*a\s*\)\s*{\s*a\s*=\s*a\.split\(\s*""\s*\)
+2024-02-02 00:38:57,411 - DEBUG - getting transform plan
+2024-02-02 00:38:57,411 - DEBUG - matched regex search: hMa=function\(\w\){[a-z=\.\(\"\)]*;(.*);(?:.+)}
+2024-02-02 00:38:57,412 - DEBUG - getting transform object
+2024-02-02 00:38:57,413 - DEBUG - Finding throttling function name
+2024-02-02 00:38:57,413 - DEBUG - finished regex search, matched: a\.[a-zA-Z]\s*&&\s*\([a-z]\s*=\s*a\.get\("n"\)\)\s*&&\s*\([a-z]\s*=\s*([a-zA-Z0-9$]+)(\[\d+\])?\([a-z]\)
+2024-02-02 00:38:57,711 - DEBUG - Finding throttling function name
+2024-02-02 00:38:57,711 - DEBUG - finished regex search, matched: a\.[a-zA-Z]\s*&&\s*\([a-z]\s*=\s*a\.get\("n"\)\)\s*&&\s*\([a-z]\s*=\s*([a-zA-Z0-9$]+)(\[\d+\])?\([a-z]\)
+2024-02-02 00:38:58,017 - DEBUG - signature found, skip decipher
+2024-02-02 00:38:58,017 - DEBUG - signature found, skip decipher
+2024-02-02 00:38:58,017 - DEBUG - signature found, skip decipher
+2024-02-02 00:38:58,017 - DEBUG - signature found, skip decipher
+2024-02-02 00:38:58,017 - DEBUG - signature found, skip decipher
+2024-02-02 00:38:58,017 - DEBUG - signature found, skip decipher
+2024-02-02 00:38:58,017 - DEBUG - signature found, skip decipher
+2024-02-02 00:38:58,017 - DEBUG - signature found, skip decipher
+2024-02-02 00:38:58,017 - DEBUG - signature found, skip decipher
+2024-02-02 00:38:58,017 - DEBUG - signature found, skip decipher
+2024-02-02 00:38:58,017 - DEBUG - signature found, skip decipher
+2024-02-02 00:38:58,017 - DEBUG - signature found, skip decipher
+2024-02-02 00:38:58,017 - DEBUG - signature found, skip decipher
+2024-02-02 00:38:58,017 - DEBUG - signature found, skip decipher
+2024-02-02 00:38:58,017 - DEBUG - signature found, skip decipher
+2024-02-02 00:38:58,018 - DEBUG - signature found, skip decipher
+2024-02-02 00:38:58,018 - DEBUG - signature found, skip decipher
+2024-02-02 00:38:58,018 - DEBUG - signature found, skip decipher
+2024-02-02 00:38:58,018 - DEBUG - signature found, skip decipher
+2024-02-02 00:38:58,706 - DEBUG - downloading (78528444 total bytes) file to /home/x1b3d3ad/Music/Macroblank - Macroblank_-_色​あ​せ​た​エ​コ​ー.mp4
+2024-02-02 00:38:59,764 - DEBUG - download remaining: 69091260
+2024-02-02 00:39:00,288 - DEBUG - download remaining: 59654076
+2024-02-02 00:39:00,812 - DEBUG - download remaining: 50216892
+2024-02-02 00:39:01,378 - DEBUG - download remaining: 40779708
+2024-02-02 00:39:01,956 - DEBUG - download remaining: 31342524
+2024-02-02 00:39:02,663 - DEBUG - download remaining: 21905340
+2024-02-02 00:39:03,888 - DEBUG - download remaining: 12468156
+2024-02-02 00:39:04,487 - DEBUG - download remaining: 3030972
+2024-02-02 00:39:04,850 - DEBUG - download remaining: 0
+2024-02-02 00:39:04,851 - DEBUG - download finished
+2024-02-02 11:26:10,741 - DEBUG - matched regex search: (?:v=|\/)([0-9A-Za-z_-]{11}).*
+2024-02-02 11:26:12,194 - DEBUG - applying descrambler
+2024-02-02 11:26:12,195 - DEBUG - finding initial function name
+2024-02-02 11:26:12,196 - DEBUG - Pattern failed: ytplayer\.config\s*=\s*
+2024-02-02 11:26:12,196 - DEBUG - Could not parse object.
+2024-02-02 11:26:12,210 - DEBUG - finished regex search, matched: (/s/player/[\w\d]+/[\w\d_/.]+/base\.js)
+2024-02-02 11:26:12,594 - DEBUG - finding initial function name
+2024-02-02 11:26:12,782 - DEBUG - finished regex search, matched: (?P<sig>[a-zA-Z0-9$]+)\s*=\s*function\(\s*a\s*\)\s*{\s*a\s*=\s*a\.split\(\s*""\s*\)
+2024-02-02 11:26:12,782 - DEBUG - getting transform plan
+2024-02-02 11:26:12,782 - DEBUG - matched regex search: hMa=function\(\w\){[a-z=\.\(\"\)]*;(.*);(?:.+)}
+2024-02-02 11:26:12,782 - DEBUG - getting transform object
+2024-02-02 11:26:12,783 - DEBUG - Finding throttling function name
+2024-02-02 11:26:12,784 - DEBUG - finished regex search, matched: a\.[a-zA-Z]\s*&&\s*\([a-z]\s*=\s*a\.get\("n"\)\)\s*&&\s*\([a-z]\s*=\s*([a-zA-Z0-9$]+)(\[\d+\])?\([a-z]\)
+2024-02-02 11:26:13,171 - DEBUG - Finding throttling function name
+2024-02-02 11:26:13,172 - DEBUG - finished regex search, matched: a\.[a-zA-Z]\s*&&\s*\([a-z]\s*=\s*a\.get\("n"\)\)\s*&&\s*\([a-z]\s*=\s*([a-zA-Z0-9$]+)(\[\d+\])?\([a-z]\)
+2024-02-02 11:26:13,577 - DEBUG - signature found, skip decipher
+2024-02-02 11:26:13,577 - DEBUG - signature found, skip decipher
+2024-02-02 11:26:13,577 - DEBUG - signature found, skip decipher
+2024-02-02 11:26:13,577 - DEBUG - signature found, skip decipher
+2024-02-02 11:26:13,577 - DEBUG - signature found, skip decipher
+2024-02-02 11:26:13,577 - DEBUG - signature found, skip decipher
+2024-02-02 11:26:13,577 - DEBUG - signature found, skip decipher
+2024-02-02 11:26:13,577 - DEBUG - signature found, skip decipher
+2024-02-02 11:26:13,577 - DEBUG - signature found, skip decipher
+2024-02-02 11:26:13,577 - DEBUG - signature found, skip decipher
+2024-02-02 11:26:13,577 - DEBUG - signature found, skip decipher
+2024-02-02 11:26:13,577 - DEBUG - signature found, skip decipher
+2024-02-02 11:26:13,577 - DEBUG - signature found, skip decipher
+2024-02-02 11:26:13,577 - DEBUG - signature found, skip decipher
+2024-02-02 11:26:13,577 - DEBUG - signature found, skip decipher
+2024-02-02 11:26:13,577 - DEBUG - signature found, skip decipher
+2024-02-02 11:26:13,577 - DEBUG - signature found, skip decipher
+2024-02-02 11:26:13,862 - DEBUG - downloading (78778480 total bytes) file to /home/x1b3d3ad/Videos/SmarterEveryDay - How_the_Warhead_on_the_AIM-9_Sidewinder_Works_-_Smarter_Every_Day_282.mp4
+2024-02-02 11:26:14,479 - DEBUG - download remaining: 69341296
+2024-02-02 11:26:15,114 - DEBUG - download remaining: 59904112
+2024-02-02 11:26:15,689 - DEBUG - download remaining: 50466928
+2024-02-02 11:26:16,278 - DEBUG - download remaining: 41029744
+2024-02-02 11:26:16,977 - DEBUG - download remaining: 31592560
+2024-02-02 11:26:17,698 - DEBUG - download remaining: 22155376
+2024-02-02 11:26:18,276 - DEBUG - download remaining: 12718192
+2024-02-02 11:26:18,891 - DEBUG - download remaining: 3281008
+2024-02-02 11:26:19,194 - DEBUG - download remaining: 0
+2024-02-02 11:26:19,195 - DEBUG - download finished
+2024-02-02 11:26:22,899 - DEBUG - matched regex search: (?:v=|\/)([0-9A-Za-z_-]{11}).*
+2024-02-02 11:26:24,204 - DEBUG - applying descrambler
+2024-02-02 11:26:24,205 - DEBUG - finding initial function name
+2024-02-02 11:26:24,206 - DEBUG - Pattern failed: ytplayer\.config\s*=\s*
+2024-02-02 11:26:24,206 - DEBUG - Could not parse object.
+2024-02-02 11:26:24,219 - DEBUG - finished regex search, matched: (/s/player/[\w\d]+/[\w\d_/.]+/base\.js)
+2024-02-02 11:26:24,219 - DEBUG - finding initial function name
+2024-02-02 11:26:24,410 - DEBUG - finished regex search, matched: (?P<sig>[a-zA-Z0-9$]+)\s*=\s*function\(\s*a\s*\)\s*{\s*a\s*=\s*a\.split\(\s*""\s*\)
+2024-02-02 11:26:24,411 - DEBUG - getting transform plan
+2024-02-02 11:26:24,411 - DEBUG - matched regex search: hMa=function\(\w\){[a-z=\.\(\"\)]*;(.*);(?:.+)}
+2024-02-02 11:26:24,411 - DEBUG - getting transform object
+2024-02-02 11:26:24,412 - DEBUG - Finding throttling function name
+2024-02-02 11:26:24,412 - DEBUG - finished regex search, matched: a\.[a-zA-Z]\s*&&\s*\([a-z]\s*=\s*a\.get\("n"\)\)\s*&&\s*\([a-z]\s*=\s*([a-zA-Z0-9$]+)(\[\d+\])?\([a-z]\)
+2024-02-02 11:26:24,811 - DEBUG - Finding throttling function name
+2024-02-02 11:26:24,811 - DEBUG - finished regex search, matched: a\.[a-zA-Z]\s*&&\s*\([a-z]\s*=\s*a\.get\("n"\)\)\s*&&\s*\([a-z]\s*=\s*([a-zA-Z0-9$]+)(\[\d+\])?\([a-z]\)
+2024-02-02 11:26:25,212 - DEBUG - signature found, skip decipher
+2024-02-02 11:26:25,212 - DEBUG - signature found, skip decipher
+2024-02-02 11:26:25,212 - DEBUG - signature found, skip decipher
+2024-02-02 11:26:25,213 - DEBUG - signature found, skip decipher
+2024-02-02 11:26:25,213 - DEBUG - signature found, skip decipher
+2024-02-02 11:26:25,213 - DEBUG - signature found, skip decipher
+2024-02-02 11:26:25,213 - DEBUG - signature found, skip decipher
+2024-02-02 11:26:25,213 - DEBUG - signature found, skip decipher
+2024-02-02 11:26:25,213 - DEBUG - signature found, skip decipher
+2024-02-02 11:26:25,213 - DEBUG - signature found, skip decipher
+2024-02-02 11:26:25,213 - DEBUG - signature found, skip decipher
+2024-02-02 11:26:25,213 - DEBUG - signature found, skip decipher
+2024-02-02 11:26:25,213 - DEBUG - signature found, skip decipher
+2024-02-02 11:26:25,213 - DEBUG - signature found, skip decipher
+2024-02-02 11:26:25,213 - DEBUG - signature found, skip decipher
+2024-02-02 11:26:25,213 - DEBUG - signature found, skip decipher
+2024-02-02 11:26:25,213 - DEBUG - signature found, skip decipher
+2024-02-02 11:26:25,578 - DEBUG - downloading (139546877 total bytes) file to /home/x1b3d3ad/Videos/Domain of Science - The_Surprising_Map_of_Plants.mp4
+2024-02-02 11:26:26,627 - DEBUG - download remaining: 130109693
+2024-02-02 11:26:27,390 - DEBUG - download remaining: 120672509
+2024-02-02 11:26:28,069 - DEBUG - download remaining: 111235325
+2024-02-02 11:26:28,804 - DEBUG - download remaining: 101798141
+2024-02-02 11:26:29,507 - DEBUG - download remaining: 92360957
+2024-02-02 11:26:30,238 - DEBUG - download remaining: 82923773
+2024-02-02 11:26:30,937 - DEBUG - download remaining: 73486589
+2024-02-02 11:26:31,638 - DEBUG - download remaining: 64049405
+2024-02-02 11:26:32,377 - DEBUG - download remaining: 54612221
+2024-02-02 11:26:33,139 - DEBUG - download remaining: 45175037
+2024-02-02 11:26:33,862 - DEBUG - download remaining: 35737853
+2024-02-02 11:26:34,543 - DEBUG - download remaining: 26300669
+2024-02-02 11:26:35,283 - DEBUG - download remaining: 16863485
+2024-02-02 11:26:36,146 - DEBUG - download remaining: 7426301
+2024-02-02 11:26:36,763 - DEBUG - download remaining: 0
+2024-02-02 11:26:36,764 - DEBUG - download finished
+2024-02-02 11:26:57,096 - DEBUG - matched regex search: (?:v=|\/)([0-9A-Za-z_-]{11}).*
+2024-02-02 11:26:58,444 - DEBUG - applying descrambler
+2024-02-02 11:26:58,444 - DEBUG - finding initial function name
+2024-02-02 11:26:58,445 - DEBUG - Pattern failed: ytplayer\.config\s*=\s*
+2024-02-02 11:26:58,445 - DEBUG - Could not parse object.
+2024-02-02 11:26:58,458 - DEBUG - finished regex search, matched: (/s/player/[\w\d]+/[\w\d_/.]+/base\.js)
+2024-02-02 11:26:58,458 - DEBUG - finding initial function name
+2024-02-02 11:26:58,641 - DEBUG - finished regex search, matched: (?P<sig>[a-zA-Z0-9$]+)\s*=\s*function\(\s*a\s*\)\s*{\s*a\s*=\s*a\.split\(\s*""\s*\)
+2024-02-02 11:26:58,641 - DEBUG - getting transform plan
+2024-02-02 11:26:58,642 - DEBUG - matched regex search: hMa=function\(\w\){[a-z=\.\(\"\)]*;(.*);(?:.+)}
+2024-02-02 11:26:58,642 - DEBUG - getting transform object
+2024-02-02 11:26:58,642 - DEBUG - Finding throttling function name
+2024-02-02 11:26:58,643 - DEBUG - finished regex search, matched: a\.[a-zA-Z]\s*&&\s*\([a-z]\s*=\s*a\.get\("n"\)\)\s*&&\s*\([a-z]\s*=\s*([a-zA-Z0-9$]+)(\[\d+\])?\([a-z]\)
+2024-02-02 11:26:59,021 - DEBUG - Finding throttling function name
+2024-02-02 11:26:59,022 - DEBUG - finished regex search, matched: a\.[a-zA-Z]\s*&&\s*\([a-z]\s*=\s*a\.get\("n"\)\)\s*&&\s*\([a-z]\s*=\s*([a-zA-Z0-9$]+)(\[\d+\])?\([a-z]\)
+2024-02-02 11:26:59,399 - DEBUG - signature found, skip decipher
+2024-02-02 11:26:59,400 - DEBUG - signature found, skip decipher
+2024-02-02 11:26:59,400 - DEBUG - signature found, skip decipher
+2024-02-02 11:26:59,400 - DEBUG - signature found, skip decipher
+2024-02-02 11:26:59,400 - DEBUG - signature found, skip decipher
+2024-02-02 11:26:59,400 - DEBUG - signature found, skip decipher
+2024-02-02 11:26:59,400 - DEBUG - signature found, skip decipher
+2024-02-02 11:26:59,400 - DEBUG - signature found, skip decipher
+2024-02-02 11:26:59,400 - DEBUG - signature found, skip decipher
+2024-02-02 11:26:59,400 - DEBUG - signature found, skip decipher
+2024-02-02 11:26:59,400 - DEBUG - signature found, skip decipher
+2024-02-02 11:26:59,400 - DEBUG - signature found, skip decipher
+2024-02-02 11:26:59,400 - DEBUG - signature found, skip decipher
+2024-02-02 11:26:59,400 - DEBUG - signature found, skip decipher
+2024-02-02 11:26:59,400 - DEBUG - signature found, skip decipher
+2024-02-02 11:26:59,400 - DEBUG - signature found, skip decipher
+2024-02-02 11:26:59,400 - DEBUG - signature found, skip decipher
+2024-02-02 11:26:59,400 - DEBUG - signature found, skip decipher
+2024-02-02 11:26:59,400 - DEBUG - signature found, skip decipher
+2024-02-02 11:26:59,641 - DEBUG - downloading (30890891 total bytes) file to /home/x1b3d3ad/Videos/ExtinctZoo - The_Largest_Animal_To_Ever_Fly_Wasn't_Quetzalcoatlus.mp4
+2024-02-02 11:27:01,162 - DEBUG - download remaining: 21453707
+2024-02-02 11:27:03,122 - DEBUG - download remaining: 12016523
+2024-02-02 11:27:04,827 - DEBUG - download remaining: 2579339
+2024-02-02 11:27:05,600 - DEBUG - download remaining: 0
+2024-02-02 11:27:05,601 - DEBUG - download finished
+2024-02-02 11:27:19,427 - DEBUG - matched regex search: (?:v=|\/)([0-9A-Za-z_-]{11}).*
+2024-02-02 11:27:20,944 - DEBUG - applying descrambler
+2024-02-02 11:27:20,944 - DEBUG - finding initial function name
+2024-02-02 11:27:20,945 - DEBUG - Pattern failed: ytplayer\.config\s*=\s*
+2024-02-02 11:27:20,945 - DEBUG - Could not parse object.
+2024-02-02 11:27:20,959 - DEBUG - finished regex search, matched: (/s/player/[\w\d]+/[\w\d_/.]+/base\.js)
+2024-02-02 11:27:20,959 - DEBUG - finding initial function name
+2024-02-02 11:27:21,147 - DEBUG - finished regex search, matched: (?P<sig>[a-zA-Z0-9$]+)\s*=\s*function\(\s*a\s*\)\s*{\s*a\s*=\s*a\.split\(\s*""\s*\)
+2024-02-02 11:27:21,147 - DEBUG - getting transform plan
+2024-02-02 11:27:21,147 - DEBUG - matched regex search: hMa=function\(\w\){[a-z=\.\(\"\)]*;(.*);(?:.+)}
+2024-02-02 11:27:21,147 - DEBUG - getting transform object
+2024-02-02 11:27:21,148 - DEBUG - Finding throttling function name
+2024-02-02 11:27:21,149 - DEBUG - finished regex search, matched: a\.[a-zA-Z]\s*&&\s*\([a-z]\s*=\s*a\.get\("n"\)\)\s*&&\s*\([a-z]\s*=\s*([a-zA-Z0-9$]+)(\[\d+\])?\([a-z]\)
+2024-02-02 11:27:21,533 - DEBUG - Finding throttling function name
+2024-02-02 11:27:21,533 - DEBUG - finished regex search, matched: a\.[a-zA-Z]\s*&&\s*\([a-z]\s*=\s*a\.get\("n"\)\)\s*&&\s*\([a-z]\s*=\s*([a-zA-Z0-9$]+)(\[\d+\])?\([a-z]\)
+2024-02-02 11:27:21,916 - DEBUG - signature found, skip decipher
+2024-02-02 11:27:21,916 - DEBUG - signature found, skip decipher
+2024-02-02 11:27:21,916 - DEBUG - signature found, skip decipher
+2024-02-02 11:27:21,916 - DEBUG - signature found, skip decipher
+2024-02-02 11:27:21,916 - DEBUG - signature found, skip decipher
+2024-02-02 11:27:21,916 - DEBUG - signature found, skip decipher
+2024-02-02 11:27:21,916 - DEBUG - signature found, skip decipher
+2024-02-02 11:27:21,917 - DEBUG - signature found, skip decipher
+2024-02-02 11:27:21,917 - DEBUG - signature found, skip decipher
+2024-02-02 11:27:21,917 - DEBUG - signature found, skip decipher
+2024-02-02 11:27:21,917 - DEBUG - signature found, skip decipher
+2024-02-02 11:27:21,917 - DEBUG - signature found, skip decipher
+2024-02-02 11:27:21,917 - DEBUG - signature found, skip decipher
+2024-02-02 11:27:21,917 - DEBUG - signature found, skip decipher
+2024-02-02 11:27:21,917 - DEBUG - signature found, skip decipher
+2024-02-02 11:27:21,917 - DEBUG - signature found, skip decipher
+2024-02-02 11:27:21,917 - DEBUG - signature found, skip decipher
+2024-02-02 11:27:21,917 - DEBUG - signature found, skip decipher
+2024-02-02 11:27:21,917 - DEBUG - signature found, skip decipher
+2024-02-02 11:27:22,323 - DEBUG - downloading (55474583 total bytes) file to /home/x1b3d3ad/Videos/John Michael Godier - The_Deep_Biospheres.mp4
+2024-02-02 11:27:22,987 - DEBUG - download remaining: 46037399
+2024-02-02 11:27:23,646 - DEBUG - download remaining: 36600215
+2024-02-02 11:27:24,297 - DEBUG - download remaining: 27163031
+2024-02-02 11:27:24,923 - DEBUG - download remaining: 17725847
+2024-02-02 11:27:25,483 - DEBUG - download remaining: 8288663
+2024-02-02 11:27:26,032 - DEBUG - download remaining: 0
+2024-02-02 11:27:26,033 - DEBUG - download finished
+2024-02-05 20:04:41,059 - DEBUG - matched regex search: (?:v=|\/)([0-9A-Za-z_-]{11}).*
+2024-02-05 20:04:43,040 - DEBUG - applying descrambler
+2024-02-05 20:04:43,041 - DEBUG - finding initial function name
+2024-02-05 20:04:43,041 - DEBUG - Pattern failed: ytplayer\.config\s*=\s*
+2024-02-05 20:04:43,041 - DEBUG - Could not parse object.
+2024-02-05 20:04:43,057 - DEBUG - finished regex search, matched: (/s/player/[\w\d]+/[\w\d_/.]+/base\.js)
+2024-02-05 20:04:43,480 - DEBUG - finding initial function name
+2024-02-05 20:04:43,672 - DEBUG - finished regex search, matched: (?P<sig>[a-zA-Z0-9$]+)\s*=\s*function\(\s*a\s*\)\s*{\s*a\s*=\s*a\.split\(\s*""\s*\)
+2024-02-05 20:04:43,672 - DEBUG - getting transform plan
+2024-02-05 20:04:43,672 - DEBUG - matched regex search: hMa=function\(\w\){[a-z=\.\(\"\)]*;(.*);(?:.+)}
+2024-02-05 20:04:43,672 - DEBUG - getting transform object
+2024-02-05 20:04:43,673 - DEBUG - Finding throttling function name
+2024-02-05 20:04:43,674 - DEBUG - finished regex search, matched: a\.[a-zA-Z]\s*&&\s*\([a-z]\s*=\s*a\.get\("n"\)\)\s*&&\s*\([a-z]\s*=\s*([a-zA-Z0-9$]+)(\[\d+\])?\([a-z]\)
+2024-02-05 20:04:43,980 - DEBUG - Finding throttling function name
+2024-02-05 20:04:43,981 - DEBUG - finished regex search, matched: a\.[a-zA-Z]\s*&&\s*\([a-z]\s*=\s*a\.get\("n"\)\)\s*&&\s*\([a-z]\s*=\s*([a-zA-Z0-9$]+)(\[\d+\])?\([a-z]\)
+2024-02-05 20:04:44,299 - DEBUG - signature found, skip decipher
+2024-02-05 20:04:44,299 - DEBUG - signature found, skip decipher
+2024-02-05 20:04:44,299 - DEBUG - signature found, skip decipher
+2024-02-05 20:04:44,300 - DEBUG - signature found, skip decipher
+2024-02-05 20:04:44,300 - DEBUG - signature found, skip decipher
+2024-02-05 20:04:44,300 - DEBUG - signature found, skip decipher
+2024-02-05 20:04:44,300 - DEBUG - signature found, skip decipher
+2024-02-05 20:04:44,300 - DEBUG - signature found, skip decipher
+2024-02-05 20:04:44,300 - DEBUG - signature found, skip decipher
+2024-02-05 20:04:44,300 - DEBUG - signature found, skip decipher
+2024-02-05 20:04:44,300 - DEBUG - signature found, skip decipher
+2024-02-05 20:04:44,300 - DEBUG - signature found, skip decipher
+2024-02-05 20:04:44,300 - DEBUG - signature found, skip decipher
+2024-02-05 20:04:44,300 - DEBUG - signature found, skip decipher
+2024-02-05 20:04:44,300 - DEBUG - signature found, skip decipher
+2024-02-05 20:04:44,301 - DEBUG - signature found, skip decipher
+2024-02-05 20:04:44,301 - DEBUG - signature found, skip decipher
+2024-02-05 20:04:44,301 - DEBUG - signature found, skip decipher
+2024-02-05 20:04:44,301 - DEBUG - signature found, skip decipher
+2024-02-05 20:04:44,894 - DEBUG - downloading (48680253 total bytes) file to /home/x1b3d3ad/Videos/Curious Droid - How_did_the_Apollo_flight_computers_get_men_to_the_moon_and_back_?.mp4
+2024-02-05 20:04:45,635 - DEBUG - download remaining: 39243069
+2024-02-05 20:04:46,423 - DEBUG - download remaining: 29805885
+2024-02-05 20:04:46,971 - DEBUG - download remaining: 20368701
+2024-02-05 20:04:47,586 - DEBUG - download remaining: 10931517
+2024-02-05 20:04:48,168 - DEBUG - download remaining: 1494333
+2024-02-05 20:04:48,484 - DEBUG - download remaining: 0
+2024-02-05 20:04:48,485 - DEBUG - download finished
