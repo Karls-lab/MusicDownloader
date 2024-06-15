@@ -1,9 +1,10 @@
-from pytube import Playlist, YouTube
+from pytube import Playlist, YouTube 
 import os
 import pandas as pd
 import requests
+from pytube.innertube import _default_clients
 
-
+_default_clients["ANDROID_MUSIC"] = _default_clients["ANDROID_CREATOR"]
 
 class Model:
     def __init__(self, logger):
@@ -86,7 +87,7 @@ class Model:
             else: # if it's only one video
                 """ create a yt object, save name and link to recent downloads, download video"""
                 print("Found a YT ob    ject")
-                yt = YouTube(link)
+                yt = YouTube(link) 
                 self.update_recent_downloads(yt.title, self.video_link)
                 return [yt]
         except Exception as e: # something went wrong
